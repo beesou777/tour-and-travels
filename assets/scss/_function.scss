@@ -1,0 +1,12 @@
+@function fontFamily($fontname, $n: null) {
+    @if $fontname and $n {
+        @return $fontname,$n;
+    }
+    @else{
+        @return $fontname;
+    }
+}
+
+@function setBackground($img){
+    @return url($img);
+}
