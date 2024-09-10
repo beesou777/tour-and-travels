@@ -4,14 +4,14 @@
     :class="[props.grid ? `md:grid-cols-${props.grid}` : 'md:grid-cols-4']"
   >
     <div
-      class="group bg-[#fff] rounded-md overflow-x-hidden [box-shadow:8px_1px_10px_0px_rgba(0,_0,_0,_0.08)]"
+      class="group bg-[#fff] cursor-pointer rounded-md overflow-x-hidden [box-shadow:8px_1px_10px_0px_rgba(0,_0,_0,_0.08)]"
       v-for="(feature, index) in props.data"
       :key="feature.id || index"
       @mouseover="handleHover(feature)"
     >
-      <div class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300">
+      <NuxtLink to="/tour/data" class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300">
         <NuxtImg :src="feature.img" alt="" class="aspect-[350/250] w-full object-cover" />
-      </div>
+      </NuxtLink>
       <div class="bg-[#fff] translate-y-[-20px] mb-[-20px] rounded-md p-4">
         <p class="text-small font-bold text-muted">
           {{ feature.location }}

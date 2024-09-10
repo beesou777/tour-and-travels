@@ -10,13 +10,13 @@
         v-for="(item, index) in destination"
         :key="index"
       >
-        <div class="group-hover:scale-110 duration-300">
+        <NuxtLink to="/tour/ramdom" class="group-hover:scale-110 duration-300">
           <img
             :src="item.image"
             alt=""
             class="aspect-[350/250] w-full h-auto object-cover transform transition-transform duration-500"
           />
-        </div>
+        </NuxtLink>
           <p
             class="absolute right-4 top-4 z-10 bg-accent py-[4px] px-4 rounded-md font-bold text-white"
           >
