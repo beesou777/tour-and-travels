@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="text-center h-[300px] bg-secondary md:py-[6rem] py-[4rem]">
-      <h1>Hello , what can we help you find?</h1>
+      <h1 class="h1">Hello , what can we help you find?</h1>
       <p class="py-4">Lorem ipsum dolor sit amet consectetur</p>
     </div>
     <div class="max-w-[1440px] mx-auto md:px-[2rem] py-5" id="faqs">
@@ -36,11 +36,6 @@
       </div>
     </div>
   </div>
-  <!-- <teleport to="head">
-    <component :is="'script'" type="application/ld+json">
-      {{ faqSchema }}
-    </component> -->
-  <!-- </teleport> -->
 </template>
 
 <script setup lang="ts">
@@ -135,6 +130,10 @@ const toggle = (index: number) => {
     activeIndex.value = index;
   }
 };
+
+useHead({
+  title: "FAQ",
+})
 </script>
 
 <style scoped>

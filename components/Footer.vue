@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-950 text-white py-10">
     <div
-      class="max-w-[1440px] mx-auto px-[10px] grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1"
+      class="max-w-[1440px] mx-auto px-[10px] grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1"
     >
       <div class="">
         <div class="logo">
@@ -72,21 +72,29 @@
         </div>
       </div>
       <div class="">
-        <h3>Our Company</h3>
+        <h3 class="mb-4">Short Links</h3>
         <div class="flex gap-2 flex-col">
-          <a href="#">Links</a>
-          <a href="#">Links</a>
-          <a href="#">Links</a>
-          <a href="#">Links</a>
+          <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/about-us">About Us</NuxtLink>
+          <NuxtLink to="/faq">FAQs</NuxtLink>
+          <NuxtLink to="/tour">Tour</NuxtLink>
+          <NuxtLink to="/contact">Contact</NuxtLink>
+        </div>
+      </div>
+       <div class="">
+        <h3 class="mb-4">Our services</h3>
+        <div class="flex gap-2 flex-col">
+          <NuxtLink to="/">Services1</NuxtLink>
+          <NuxtLink to="/">Services2</NuxtLink>
+          <NuxtLink to="/">Services3</NuxtLink>
+          <NuxtLink to="/">Services4</NuxtLink>
         </div>
       </div>
       <div class="">
-        <h3>Our Company</h3>
+        <h3 class="mb-4">Legal</h3>
         <div class="flex gap-2 flex-col">
-          <a href="#">Links</a>
-          <a href="#">Links</a>
-          <a href="#">Links</a>
-          <a href="#">Links</a>
+          <NuxtLink to="/terms-and-conditions">Terms and Conditions</NuxtLink>
+          <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
         </div>
       </div>
     </div>
@@ -95,5 +103,3 @@
 <script setup lang="ts">
 import logo from "../assets/icons/logo.svg";
 </script>
-<style scoped lang="scss">
-</style>

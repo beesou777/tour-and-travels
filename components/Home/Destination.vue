@@ -2,7 +2,7 @@
   <div class="max-w-[1450px] mx-auto px-[10px] md:py-10 py-6">
     <p class="h5 text-center text-primary">Explore the world</p>
     <h2 class="extra-h1 leading-[1.1] mx-auto py-6 max-w-[720px] text-center">
-      We Provide Top <span class="font_family text-muted">Tourist</span> Destination
+      Check Our Top <span class="font_family text-muted">Tourist</span> Destination
     </h2>
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
       <div

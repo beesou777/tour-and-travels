@@ -35,7 +35,7 @@
                          <span>
                               <img :src="location" alt="icons" height="20" width="20" class="h-[24px] w-[24px]">
                          </span>
-                         <span class="font-bold">Checkout Beautiful Places Arround the World.</span>
+                         <span class="font-bold">Checkout Beautiful Places Around the Nepal.</span>
                     </div>
                </div>
           </div>
