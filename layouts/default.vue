@@ -1,10 +1,11 @@
 <template>
   <div>
     <navbar />
-     <div class="">
-         <slot></slot>
-     </div>
-     <scroll-top />
-    <footer/>
+    <div class="">
+      <slot></slot>
+    </div>
+    <footer />
+    <scroll-top />
   </div>
 </template>
+ 

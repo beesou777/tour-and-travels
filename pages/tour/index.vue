@@ -1,7 +1,5 @@
 <template>
-<div class="">
-     this is tour
-</div>
+     <tour-data/>
 </template>
 <script setup lang="ts">
 </script>

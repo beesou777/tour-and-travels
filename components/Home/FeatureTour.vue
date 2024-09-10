@@ -27,67 +27,23 @@
           </button>
         </div>
       </div>
+      <ui-card-data :data="renderData"  />
 
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 py-4"
-      >
-        <div
-          class="group bg-[#fff] rounded-md overflow-x-hidden [box-shadow:8px_1px_10px_0px_rgba(0,_0,_0,_0.08)]"
-          v-for="(feature, index) in renderData"
-          :key="index"
-        >
-          <div
-            class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300"
-          >
-            <img :src="feature.img" alt="" class="aspect-[350/250] w-full object-cover" />
-          </div>
-          <div class="bg-[#fff] translate-y-[-20px] mb-[-20px] rounded-md p-4">
-            <p class="text-small fomt-bold text-muted">
-              {{ feature.location }}
-            </p>
-            <h3 class="h5">{{ feature.title }}</h3>
-            <div class="flex gap-2 items-center">
-              <span
-                >{{ feature.days }} <span class="body-bold">Days</span></span
-              >
-              <span
-                >{{ feature.person }}
-                <span class="body-bold">Person</span></span
-              >
-            </div>
-            <hr class="text-muted pb-2 mt-2" />
-            <p>
-              From
-              <span class="text-primary body-bold">${{ feature.price }}</span>
-            </p>
-          </div>
-        </div>
-      </div>
       <div class="text-center py-2">
-        <button class="px-4 py-3 bg-primary text-white rounded hover:bg-green-700 duration-000">View All Tour</button>
+        <NuxtLink to="/tour" class="px-4 py-3 bg-primary text-white rounded hover:bg-green-700 duration-000">View All Tour</NuxtLink>
       </div>
     </div>
   </div>
 </template>
 <script setup lang="ts">
-interface FeaturePlace {
-  img: string;
-  title: string;
-  price: number;
-  person: number;
-  location: string;
-  days: number;
-  slug?: location["name"];
-}
+import { useTourStore } from "~/store/toueStore";
 
-
+const tourStore = useTourStore();
 interface location {
   name: string;
 }
 
 const activeButton = ref<string>("All");
-
-const featureData:  FeaturePlace[] = [];
 
 const buttonData: location[] = [
   {
@@ -110,23 +66,15 @@ const buttonData: location[] = [
   },
 ];
 
-onMounted(() => {
-  try {
-    fetch("api/get-tour").then((res) => {
-      res.json().then((data) => {
-        featureData.push(...data);
-      });
-    })
-  } catch (error) {
-    console.log(error);
-  }
+onMounted(async () => {
+  await tourStore.getTours();
 });
 
 const renderData = computed(() => {
   if (activeButton.value == "All") {
-    return featureData?.slice(0, 8);
+    return tourStore.tourDestination.slice(0, 8);
   } else {
-    return featureData.filter((item) => item.slug == activeButton.value);
+    return tourStore.tourDestination.filter((item: any) => item.slug == activeButton.value);
   }
 });
 </script>

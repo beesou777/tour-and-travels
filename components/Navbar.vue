@@ -1,7 +1,7 @@
 <template>
-  <div class="!sticky top-[0] w-full z-[20] h-full">
+  <div class="w-full z-[20] h-full">
     <nav
-      class="bg-gray-100 flex flex-wrap items-center justify-between px-2 md:p-10 py-4 lg:py-4"
+      class="shadow-[0px_3px_6px_rgb(0,_0,_0,_6%)] bg-gray-50 flex flex-wrap items-center justify-between px-2 md:p-10 py-4 lg:py-4"
     >
       <div class="">
         <img :src="logo" alt="" />
@@ -14,11 +14,11 @@
               v-for="(item, index) in navItem"
               :key="index"
             >
-              <a
-                :href="item.href"
+              <NuxtLink
+                :to="item.href"
                 aria-current="page"
                 class="text-[14px] font-semibold hover:text-primary hover:duration-300 duration-300"
-                >{{ item.name }}</a
+                >{{ item.name }}</NuxtLink
               >
             </li>
           </ul>
@@ -74,7 +74,7 @@
                   'font-semibold': router.currentRoute.value.name === 'index',
                 }"
               >
-                <a :href="item.href">{{ item.name }}</a>
+                <NuxtLink :to="item.href">{{ item.name }}</NuxtLink>
               </li>
             </ul>
           </div>
@@ -146,7 +146,7 @@ interface NavItem {
 const navItem: readonly NavItem[] = [
   { name: "Home", href: "/" },
   { name: "Tour", href: "/tour" },
-  { name: "About us", href: "/about-us" },
+  { name: "FAQ", href: "/faq" },
   { name: "Contact us", href: "/contact" },
 ];
 </script>

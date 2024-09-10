@@ -36,7 +36,7 @@
             </a>
           </h3>
           <div class="flex justify-between items-center p-[3px_9px_5px]">
-            <p>View all tours</p>
+            <p >View all tours</p>
             <a href="#" class="h-[42px] w-[42px] bg-gray-200 rounded-full flex justify-center items-center">
               <svg
                 width="24"
