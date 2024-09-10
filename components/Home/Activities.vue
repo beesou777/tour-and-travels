@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-[1450px] mx-auto py-10 px-[10px] md:px-0">
-    <h2 class="extra-h1 mx-auto leading-[1.2] pt-4 pb-10 text-center md:text-left">Explore the world</h2>
+    <h2 class="extra-h1 mx-auto leading-[1.2] pt-4 pb-10 text-center md:text-left">Activities</h2>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
       <div
         class="hover:bg-primary hover:text-white text-center flex justify-center flex-col items-center gap-4 rounded h-[250px] duration-300 group shadow-[0px_4px_17px_0px_rgba(0,_0,_0,_0.06)] md:max-h-full max-h-[160px]"
@@ -30,23 +30,23 @@ interface Activity {
 
 const activityData: readonly Activity[] = [
   {
-    name: "Kathmandu",
+    name: "Activity 1",
     image: activityImage,
   },
   {
-    name: "Kathmandu",
+    name: "Activity 2",
     image: activityImage,
   },
   {
-    name: "Kathmandu",
+    name: "Activity 3",
     image: activityImage,
   },
   {
-    name: "Kathmandu",
+    name: "Activity 4",
     image: activityImage,
   },
   {
-    name: "Kathmandu",
+    name: "Activity 5",
     image: activityImage,
   },
 ];
