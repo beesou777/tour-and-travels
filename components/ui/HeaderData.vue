@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-[1445px] mx-auto px-[10px] py-10">
-    <h1 class="py-4">Kathmandu Durbar Square (under developemt)</h1>
+    <h1 class="py-4">Kathmandu Durbar Square (under construction)</h1>
     <div class="grid md:grid-cols-4 sm:grid-cols-2">
       <div class="flex gap-4 items-center">
          <div class="h-[50px] w-[50px] bg-gray-200 rounded-full p-4">
