@@ -1,22 +1,22 @@
 <template>
   <div class="max-w-[1445px] mx-auto px-[10px] py-10">
     <h2>Overview</h2>
-    <p class="text-gray-500 py-4 max-w-[520px]">
+    <p class="text-gray-500 py-4 max-w-[720px]">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam
       distinctio perferendis soluta ullam expedita cum, eveniet iste sapiente
       temporibus.
     </p>
-    <p class="text-gray-500 py-4 max-w-[520px]">
+    <p class="text-gray-500 py-4 max-w-[720px]">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam
       distinctio perferendis soluta ullam expedita cum, eveniet iste sapiente
       temporibus.
     </p>
-    <p class="text-gray-500 py-4 max-w-[520px]">
+    <p class="text-gray-500 py-4 max-w-[720px]">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam
       distinctio perferendis soluta ullam expedita cum, eveniet iste sapiente
       temporibus.
     </p>
-    <p class="text-gray-500 py-4 max-w-[520px]">
+    <p class="text-gray-500 py-4 max-w-[720px]">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam
       distinctio perferendis soluta ullam expedita cum, eveniet iste sapiente
       temporibus.
