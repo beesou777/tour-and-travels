@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-[1440px] mx-auto px-[10px] md:py-10 py-5">
-    <h1 class="border-bottom md:my-10 my-5">Terms and Conditions</h1>
+    <h1 class="h1 md:my-10 my-5">Terms and Conditions</h1>
     <p class="text-gray-500 text-[18px]">
       Welcome to investment, your trusted source for financial insights,
       investment opportunities, and wealth management. By accessing our website,
@@ -21,8 +21,8 @@
       We recommend consulting with a qualified financial advisor before making
       any investment decisions.
     </p>
-    <h2 clss="text-[28px] font-bold pt-10">3. Refunds and Cancellations</h2>
-    
+    <h2 class="text-[28px] font-bold pt-10">3. Refunds and Cancellations</h2>
+
     <p class="text-gray-500 text-[18px]">
       For any paid services, including subscription fees or consulting fees,
       refunds and cancellations will be handled according to the specific terms

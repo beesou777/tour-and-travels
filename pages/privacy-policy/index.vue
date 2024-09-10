@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-[1440px] mx-auto px-[10px] md:py-10 py-5">
-    <h1 class="border-bottom md:my-10 my-">Privacy Policy</h1>
+    <h1 class="h1 md:my-10 my-">Privacy Policy</h1>
     <p class="text-gray-500 text-[18px]">
       Protecting your personal information is our priority at investment. This
       Privacy Policy outlines the types of personal information we collect, how
