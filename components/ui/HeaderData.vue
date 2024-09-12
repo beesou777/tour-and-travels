@@ -1,7 +1,7 @@
 <template>
-  <div class="max-w-[1445px] mx-auto px-[10px] py-10">
-    <h1 class="py-4 h1">Kathmandu Durbar Square (under construction)</h1>
-    <div class="grid md:grid-cols-4 sm:grid-cols-2">
+  <div class="max-w-[1445px] mx-auto px-[10px] py-5" v-if="tourData">
+    <h1 class="py-4 h1">{{tourData.title}}</h1>
+    <div class="grid md:grid-cols-4 sm:grid-cols-2 pb-10">
       <div class="flex gap-4 items-center">
          <div class="h-[50px] w-[50px] bg-gray-200 rounded-full p-4">
           <svg
@@ -26,7 +26,7 @@
         </div>
         <div class="">
           <p class="text-muted">Location</p>
-          <p class="font-bold">Kathmandu, Nepal</p>
+          <p class="font-bold">{{ tourData.location }}</p>
         </div>
       </div>
       <div class="flex gap-4 items-center">
@@ -53,7 +53,7 @@
         </div>
         <div class="">
           <p class="text-muted">From</p>
-          <p class="font-bold">$300</p>
+          <p class="font-bold">${{tourData.price}}</p>
         </div>
       </div>
       <div class="flex gap-4 items-center">
@@ -80,7 +80,7 @@
         </div>
         <div class="">
           <p class="text-muted">duration</p>
-          <p class="font-bold">3 Days</p>
+          <p class="font-bold">{{tourData.days}} Days</p>
         </div>
       </div>
       <div class="flex gap-4 items-center">
@@ -107,13 +107,29 @@
         </div>
         <div class="">
           <p class="text-muted">Max Person</p>
-          <p class="font-bold">5</p>
+          <p class="font-bold">{{ tourData.person }}</p>
         </div>
       </div>
+    </div>
+    <div class="flex flex-none snap-center basis-full aspect-[1920/550]">
+      <img :src="tourData.img" :alt="tourData.title" class="w-full object-cover rounded">
     </div>
   </div>
 </template>
 <script setup lang="ts">
+
+const tourStore = useTourStore();
+const router = useRouter();
+onMounted(async () => {
+  await tourStore.getTours();
+});
+
+const tourData = computed(() => {
+  const data  = tourStore.tourDestination.filter((item: any) => {
+    return item.slug2 === router.currentRoute.value.params.slug
+  })
+  return data[0] ? data[0] : {}
+});
 </script>
 <style scoped lang="scss">
 </style>

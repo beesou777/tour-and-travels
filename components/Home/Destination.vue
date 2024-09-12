@@ -10,7 +10,7 @@
         v-for="(item, index) in destination"
         :key="index"
       >
-        <NuxtLink to="/tour/ramdom" class="group-hover:scale-110 duration-300">
+        <NuxtLink :to="'tour/' + item.slug2" class="group-hover:scale-110 duration-300">
           <img
             :src="item.image"
             alt=""
@@ -72,6 +72,7 @@ interface Destination {
   image: string;
   tour_count: number;
   destination_name: string;
+  slug2: string;
 }
 
 const destination: readonly Destination[] = [
@@ -79,31 +80,37 @@ const destination: readonly Destination[] = [
     image: kathmandu,
     tour_count: 3,
     destination_name: "kathmandu",
+    slug2: "dharan-hiking-tour",
   },
   {
     image: bharatnager,
     tour_count: 3,
     destination_name: "biratnagar",
+    slug2: "lumbini-birthplace-of-resurrection",
   },
   {
     image: dharan,
     tour_count: 3,
     destination_name: "dharan",
+    slug2: "dharan-city-exploration",
   },
   {
     image: pokhara2,
     tour_count: 3,
     destination_name: "pokhara",
+    slug2: "biratnagar-cultural-experience",
   },
   {
     image: featureImg,
     tour_count: 3,
     destination_name: "lumbini",
+    slug2: "pokhara-sarangkot-sunrise",
   },
   {
     image: lumbini,
     tour_count: 3,
     destination_name: "lumbini",
+    slug2: "pokhara-lakeside",
   },
 ];
 </script>

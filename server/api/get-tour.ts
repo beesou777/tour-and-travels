@@ -8,8 +8,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 5,
             slug: "Kathmandu",
+            slug2: "kathmandu",
             lat: 27.7172,
-            lng: 85.3240
+            lng: 85.3240,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/kathmadu2.webp",
@@ -19,8 +31,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 3,
             slug: "Kathmandu",
+            slug2: "kathmandu-durbar-square",
             lat: 27.7104,
-            lng: 85.2904
+            lng: 85.2904,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/pokhara2.webp",
@@ -30,8 +54,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 7,
             slug: "Pokhara",
+            slug2: "pokhara-lakeside",
             lat: 28.2096,
-            lng: 83.9856
+            lng: 83.9856,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+                "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+                "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+                "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+                "Lorem, ipsum dolor.",
+                "Lorem, ipsum dolor.",
+                "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/pokhara3.webp",
@@ -41,8 +77,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 2,
             slug: "Pokhara",
+            slug2: "pokhara-sarangkot-sunrise",
             lat: 28.2386,
-            lng: 83.9918
+            lng: 83.9918,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/lumbini.webp",
@@ -52,8 +100,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 8,
             slug: "Lumbini",
+            slug2: "lumbini-pilgrimage",
             lat: 27.6666,
-            lng: 83.2500
+            lng: 83.2500,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/lumbini3.webp",
@@ -63,8 +123,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 9,
             slug: "Lumbini",
+            slug2: "lumbini-birthplace-of-resurrection",
             lat: 27.6666,
-            lng: 83.2500
+            lng: 83.2500,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/dhr2.webp",
@@ -74,8 +146,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 6,
             slug: "Dharan",
+            slug2: "dharan-city-exploration",
             lat: 26.8227,
-            lng: 87.2729
+            lng: 87.2729,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicinge.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicingere.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.ere"
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/dh3.webp",
@@ -85,8 +169,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 4,
             slug: "Dharan",
+            slug2: "dharan-hiking-tour",
             lat: 26.8227,
-            lng: 87.2729
+            lng: 87.2729,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/bh.webp",
@@ -96,8 +192,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 3,
             slug: "Biratnagar",
+            slug2: "biratnagar-city-tour",
             lat: 26.4483,
-            lng: 87.2694
+            lng: 87.2694,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
         {
             img: "/images/biratnagar.webp",
@@ -107,8 +215,20 @@ export default defineEventHandler(() => {
             location: "Nepal",
             days: 5,
             slug: "Biratnagar",
+            slug2: "biratnagar-cultural-experience",
             lat: 26.4483,
-            lng: 87.2694
+            lng: 87.2694,
+            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
+            highlights: [
+              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+              "Lorem ipsum dolor sit, amet consectetur adipisicing."
+            ],
+            included: [
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor.",
+              "Lorem, ipsum dolor."
+            ]
         },
     ];
 
