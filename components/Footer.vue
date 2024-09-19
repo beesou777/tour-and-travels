@@ -75,7 +75,7 @@
         <h3 class="mb-4">Short Links</h3>
         <div class="flex gap-2 flex-col">
           <NuxtLink to="/">Home</NuxtLink>
-          <NuxtLink to="/about-us">About Us</NuxtLink>
+          <NuxtLink to="/">About Us</NuxtLink>
           <NuxtLink to="/faq">FAQs</NuxtLink>
           <NuxtLink to="/tour">Tour</NuxtLink>
           <NuxtLink to="/contact">Contact</NuxtLink>

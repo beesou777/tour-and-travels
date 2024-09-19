@@ -1,5 +1,6 @@
 <template>
   <section class="mb-32">
+    <!-- Map Section -->
     <div id="map" class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5217.078131335854!2d85.3010527731726!3d27.648445111056287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb178514f97739%3A0xeb1f6e5c822e62ab!2sBhaisepati%2C%20Karyabinayak!5e0!3m2!1sen!2snp!4v1713604393339!5m2!1sen!2snp"
@@ -12,62 +13,73 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
+
+    <!-- Contact Form Section -->
     <div class="container px-6 md:px-12 mx-auto">
       <div
         class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px] border border-gray-300"
       >
         <div class="flex flex-wrap">
           <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
-            <form>
-              <div class="relative mb-6" data-te-input-wrapper-init>
+            <form @submit.prevent="sendEmail">
+              <div class="relative mb-6">
+                <input
+                  type="text"
+                  class="peer block pt-[20px] min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100"
+                  id="exampleInputName"
+                  v-model="name"
+                />
+                <label
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8]"
+                  for="exampleInputName"
+                >Name</label>
+              </div>
+              <div class="relative mb-6">
                 <input
                   type="email"
-                  class="peer block pt-[20px] min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:lh-color data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
-                  id="exampleInput90"
+                  class="peer block pt-[20px] min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100"
+                  id="exampleInputEmail"
                   v-model="email"
                 />
                 <label
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:lh-color peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  for="exampleInput90"
-                  >E-mail
-                </label>
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8]"
+                  for="exampleInputEmail"
+                >E-mail</label>
               </div>
-              <div class="relative mb-6" data-te-input-wrapper-init>
+              <div class="relative mb-6">
                 <input
                   type="text"
-                  class="peer block pt-[20px] min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:lh-color data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none"
-                  id="exampleInput91"
+                  class="peer block pt-[20px] min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100"
+                  id="exampleInputSubject"
                   v-model="subject"
                 />
                 <label
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:lh-color peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  for="exampleInput91"
-                  >subject
-                </label>
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8]"
+                  for="exampleInputSubject"
+                >Subject</label>
               </div>
-              <div class="relative mb-6" data-te-input-wrapper-init>
+              <div class="relative mb-6">
                 <textarea
                   v-model="message"
-                  class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none pt-[20px]"
-                  id="exampleFormControlTextarea1"
+                  class="peer block min-h-[auto] w-full rounded border-2 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 pt-[20px]"
+                  id="exampleFormControlTextarea"
                   rows="3"
                 ></textarea>
                 <label
-                  for="exampleFormControlTextarea1"
-                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:lh-color peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none"
-                  >Message</label
-                >
+                  for="exampleFormControlTextarea"
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8]"
+                >Message</label>
               </div>
               <button
-                type="button"
-                @click="handleSubmit"
-                class="mb-6 w-full rounded lh-primary text-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal lg:mb-0"
+                type="submit"
+                class="mb-6 w-full rounded bg-primary text-white px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal lg:mb-0"
               >
                 Send
               </button>
             </form>
+            <p v-if="statusMessage">{{ statusMessage }}</p>
           </div>
-          <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+            <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
             <div class="flex flex-wrap">
               <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
                 <div class="flex items-start">
@@ -158,5 +170,45 @@
       </div>
     </div>
   </section>
-  <!-- Container for demo purpose -->
 </template>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+
+const name = ref('');
+const subject = ref('');
+const email = ref('');
+const message = ref('');
+const statusMessage = ref('');
+
+const sendEmail = async () => {
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: name.value,
+        subject: subject.value,
+        email: email.value,
+        message: message.value,
+      }),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      statusMessage.value = result.message;
+      name.value = '';
+      subject.value = '';
+      email.value = '';
+      message.value = '';
+    } else {
+      statusMessage.value = 'Failed to send message.';
+    }
+  } catch (error) {
+    statusMessage.value = 'An error occurred.';
+  }
+};
+</script>

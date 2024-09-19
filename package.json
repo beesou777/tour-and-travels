@@ -16,11 +16,13 @@
     "@pinia/nuxt": "^0.5.4",
     "axios": "^1.7.7",
     "nuxt": "^3.13.0",
+    "nuxt-mail": "^5.0.1",
     "pinia": "^2.2.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.16",
     "sass": "^1.78.0"
   }
 }
