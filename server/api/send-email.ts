@@ -1,34 +1,36 @@
-import { defineEventHandler, createError } from 'h3';
+// server/api/send-email.ts
+
+import { defineEventHandler, readBody, createError } from 'h3';
 import nodemailer from 'nodemailer';
 
-export default defineEventHandler(async (event) => {
-    const { name, subject, email, message } = await readBody(event);
+const transporter = nodemailer.createTransport({
+    host: 'smtp.zoho.com',
+    port: 465,
+    secure: true,
+    auth: {
+        user: 'travelershimalaya@losheaven.com',
+        pass: 'July2002@27',
+    },
+});
 
-    if (!name || !subject || !email || !message) {
+export default defineEventHandler(async (event) => {
+    const { subject, email, message } = await readBody(event);
+
+    if (!subject || !email || !message) {
         throw createError({ statusCode: 400, message: 'All fields are required' });
     }
 
-    const transporter = nodemailer.createTransport({
-        host: 'smtp.zoho.com',
-        port: 465, // Port should be a number
-        secure: true,
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
-        },
-    });
-
     const mailOptions = {
-        from: email,
-        to: 'travelershimalaya@losheaven.com',
+        from: 'travelershimalaya@losheaven.com ',
+        to: 'travelershimalaya@losheaven.com', // Replace with your destination email
         subject: `Contact Form Submission: ${subject}`,
-        text: `Message from ${name} (${email}):\n\n${message}`,
-        html: `<p>Message from <strong>${name}</strong> (${email}):</p><p>${message}</p>`, // HTML content
+        text: `Message from ${email}:\n\n${message}`,
+        html: `<p>Message from <strong>${email}</strong>:</p><p>${message}</p>`,
     };
 
     try {
         await transporter.sendMail(mailOptions);
-        return { success: true, message: 'Email sent successfully!' };
+        return { success: true, message: 'Email sent successfully' };
     } catch (error) {
         console.error('Error sending email:', error);
         throw createError({ statusCode: 500, message: 'Failed to send email.' });
