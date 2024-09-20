@@ -10,16 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@pinia/nuxt',
     '@nuxtjs/leaflet',
-    ['nuxt-mail', {
-      message: {
-        to: 'travelershimalaya@losheaven.com',
-      },
-      smtp: {
-        host: 'smtp.zoho.com',
-        port: 465,
-        secure: true
-      }
-    }],
+    'nuxt-delay-hydration',
+    '@nuxt/scripts',
   ],
   css: [resolve('./assets/main.scss')],
   imports: {
@@ -37,6 +29,9 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#018937' },
       ],
     },
+  },
+  delayHydration:{
+    debug:process.env.NODE_ENV === 'development',
   },
   nitro: {
     prerender: {

@@ -36,22 +36,16 @@
   </div>
 </template>
 <script setup lang="ts">
-const tourStore = useTourStore();
-const router = useRouter();
-onMounted(async () => {
-  await tourStore.getTours();
+
+const props = defineProps({
+  tourData: {
+    type: Object,
+  },
 });
 
-const tourData = computed(() => {
-  const data  = tourStore.tourDestination.filter((item: any) => {
-    return item.slug2 === router.currentRoute.value.params.slug
-  })
-  return data[0] ? data[0] : {}
-});
+const {tourData} = toRefs(props)
 
-useHead({
-  title: `${tourData.value?.title || 'tour and travel'}`,
-})
+
 
 </script>
 <style scoped lang="scss">

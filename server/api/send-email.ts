@@ -20,16 +20,26 @@ export default defineEventHandler(async (event) => {
         throw createError({ statusCode: 400, message: 'All fields are required' });
     }
 
-    const mailOptions = {
+    const mailOptionsToSelf = {
         from: 'travelershimalaya@losheaven.com ',
-        to: 'travelershimalaya@losheaven.com', // Replace with your destination email
+        to: 'travelershimalaya@losheaven.com', 
         subject: `Contact Form Submission: ${subject}`,
         text: `Message from ${email}:\n\n${message}`,
         html: `<p>Message from <strong>${email}</strong>:</p><p>${message}</p>`,
     };
+    const mailOptionsToUser = {
+        from: 'travelershimalaya@losheaven.com',
+        to: email,
+        subject: 'Thank you for contacting us!',
+        text: `Dear ${email},\n\nThank you for reaching out! We will get back to you soon.\n\nBest regards,\nTravelers Himalaya`,
+        html: `<p>Dear <strong>${email}</strong>,</p><p>Thank you for reaching out! We will get back to you soon.</p><p>Best regards,<br/>Travelers Himalaya</p>`,
+    };
 
     try {
-        await transporter.sendMail(mailOptions);
+        await Promise.all([
+            transporter.sendMail(mailOptionsToSelf),
+            transporter.sendMail(mailOptionsToUser)
+        ])
         return { success: true, message: 'Email sent successfully' };
     } catch (error) {
         console.error('Error sending email:', error);

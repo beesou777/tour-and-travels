@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-[1445px] mx-auto px-[10px] py-5" v-if="tourData">
+  <div v-if="tourData">
     <h1 class="py-4 h1">{{tourData.title}}</h1>
     <div class="grid md:grid-cols-4 sm:grid-cols-2 pb-10">
       <div class="flex gap-4 items-center">
@@ -117,19 +117,15 @@
   </div>
 </template>
 <script setup lang="ts">
+const props = defineProps({
+  tourData: {
+    type: Object,
+    default: () => {}
+  }
+})
 
-const tourStore = useTourStore();
-const router = useRouter();
-onMounted(async () => {
-  await tourStore.getTours();
-});
+const {tourData} = toRefs(props)
 
-const tourData = computed(() => {
-  const data  = tourStore.tourDestination.filter((item: any) => {
-    return item.slug2 === router.currentRoute.value.params.slug
-  })
-  return data[0] ? data[0] : {}
-});
 </script>
 <style scoped lang="scss">
 </style>
