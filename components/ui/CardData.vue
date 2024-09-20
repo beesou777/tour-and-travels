@@ -9,7 +9,7 @@
       :key="feature.id || index"
       @mouseover="handleHover(feature)"
     >
-      <NuxtLink :to="'tour/'+feature.slug2" :area-label="feature.location" class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300">
+      <NuxtLink :to="'tour/'+feature.slug2" :area-label="feature.title" class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300">
         <NuxtImg :src="feature.img" alt="" class="aspect-[350/250] w-full object-cover" />
       </NuxtLink>
       <div class="bg-[#fff] translate-y-[-20px] mb-[-20px] rounded-md p-4">

@@ -29,12 +29,13 @@
           <h3
             class="relative h5 top-[-10px] text-white left-[-10px] w-[61%] bg-primary text-left font-semibold leading-[28.5px] uppercase p-[7px_15px] [border-top-left-radius:6px] duration-300 ease-in-out after:content-[''] after:absolute after:right-[-25px] after:bottom-0 after:m-[0_auto] after:w-0 after:h-0 after:[border-top:_43px_solid_#4da528] after:[border-left:_25px_solid_transparent] after:[border-right:_25px_solid_transparent]"
           >
-            <NuxtLink :to="'/destination/' + item.slug2">{{ item.destination_name }}</NuxtLink>
+            <NuxtLink :to="'/tour/' + item.slug2" :area-label="item.destination_name">{{ item.destination_name }}</NuxtLink>
           </h3>
           <div class="flex justify-between items-center p-[3px_9px_5px]">
             <p>View all tours in {{ item.destination_name }}</p>
             <NuxtLink
-              :to="'/destination/' + item.slug2"
+            :area-label="item.slug2"
+              :to="'/tour/' + item.slug2"
               class="h-[42px] w-[42px] bg-gray-200 rounded-full flex justify-center items-center"
             >
               <svg

@@ -23,6 +23,17 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
+      link: [
+        {
+          rel: 'preload',
+          href: 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap',
+          as: 'style',
+          onload: "this.onload=null;this.rel='stylesheet'",
+        }
+      ],
+      noscript: [
+        { children: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap">' }
+      ],
       meta: [
         { name: 'title', content: 'travels and tour' },
         { name: 'description', content: 'travels and tour' },
@@ -30,8 +41,8 @@ export default defineNuxtConfig({
       ],
     },
   },
-  delayHydration:{
-    debug:process.env.NODE_ENV === 'development',
+  delayHydration: {
+    debug: process.env.NODE_ENV === 'development',
   },
   nitro: {
     prerender: {
