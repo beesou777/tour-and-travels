@@ -12,6 +12,6 @@
 <script setup lang="ts">
 
 useHead({
-  title: "Home",
+  title: "Nepal Travel & Tour | best travel agency in Nepal",
 })
 </script>

@@ -5,11 +5,12 @@
     <div
       class="bg-cover bg-center bg-norepeat min-h-[100vh] py-10 max-w-[1445px] mx-auto px-[10px] relative z-[10]"
     >
-      <p class="h4 text-center text-primary">Explore the world</p>
-      <h2 class="extra-h1 mx-auto py-2 max-w-[720px] text-center">
-        Amazing Featured Tour
-        <span class="font_family text-muted">Package</span> The World
-      </h2>
+      <!-- H1 for SEO -->
+      <h1 class="h1 mx-auto py-2 max-w-[820px] text-center text-pretty">
+        Amazing Featured Tour Packages in Nepal
+        <span class="font_family text-muted">Explore the Nepal with Us</span>
+      </h1>
+
       <div class="flex gap-3 justify-center py-4 md:py-2 overflow-visible">
         <div class="flex gap-3 justify-center py-4 md:py-2 overflow-visible">
           <button
@@ -27,67 +28,63 @@
           </button>
         </div>
       </div>
-      <ui-card-data :data="renderData"  />
 
+      <!-- Card Data Component (Shows Tours) -->
+      <ui-card-data :data="renderData" />
+
+      <!-- CTA Button with Optimized Link Text for SEO -->
       <div class="text-center py-2">
-        <NuxtLink to="/tour" class="px-4 py-3 bg-primary text-white rounded hover:bg-green-700 duration-000">View All Tour</NuxtLink>
+        <NuxtLink to="/tour" class="px-4 py-3 bg-primary text-white rounded hover:bg-green-700 duration-000">
+          View All Nepal Tour Packages
+        </NuxtLink>
       </div>
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
-import { useTourStore } from "~/store/toueStore";
+import { useTourStore } from "../../store/toueStore";
 
 const tourStore = useTourStore();
-interface location {
-  name: string;
-}
 
+// Active filter button
 const activeButton = ref<string>("All");
 
-const buttonData: location[] = [
-  {
-    name: "All",
-  },
-  {
-    name: "Kathmandu",
-  },
-  {
-    name: "Pokhara",
-  },
-  {
-    name: "Lumbini",
-  },
-  {
-    name: "Dharan",
-  },
-  {
-    name: "Biratnagar",
-  },
+const buttonData = [
+  { name: "All" },
+  { name: "Kathmandu" },
+  { name: "Pokhara" },
+  { name: "Lumbini" },
+  { name: "Dharan" },
+  { name: "Biratnagar" }
 ];
 
+// Fetching data on mounted
 onMounted(async () => {
   await tourStore.getTours();
 });
 
+// Computed data based on active button
 const renderData = computed(() => {
-  if (activeButton.value == "All") {
+  if (activeButton.value === "All") {
     return tourStore.tourDestination.slice(0, 8);
   } else {
-    return tourStore.tourDestination.filter((item: any) => item.slug == activeButton.value);
+    return tourStore.tourDestination.filter((item:any) => item.slug === activeButton.value);
   }
 });
 </script>
+
 <style scoped lang="scss">
 @import "../../assets/scss/_function.scss";
 
+// Background image styling
 .background_image {
   &::after {
-    background-image: setBackground(
-      "../../assets/img/destination/background.webp"
-    );
+    background-image: setBackground("../../assets/img/destination/background.webp");
   }
 }
+
+// Custom font family
 .font_family {
   font-family: fontFamily(cursive);
 }

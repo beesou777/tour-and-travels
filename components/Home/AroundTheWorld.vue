@@ -70,7 +70,9 @@
         <div class="flex gap-2 items-center py-8">
           <div>
             <p class="text-white flex items-center gap-4">
-              <span
+
+              <NuxtLink
+              to="/contact"
                 class="p-4 bg-gray-50 rounded-full md:h-[80px] md:w-[80px] h-[52px] w-[52px] flex justify-center items-center rotate-[45deg] hover:opacity-[90%] duration-300"
               >
                 <svg
@@ -85,7 +87,7 @@
                     fill="#000"
                   />
                 </svg>
-              </span>
+              </NuxtLink>
               <span class="h2"> Get Started </span>
             </p>
           </div>

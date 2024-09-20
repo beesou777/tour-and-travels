@@ -9,14 +9,14 @@
       :key="feature.id || index"
       @mouseover="handleHover(feature)"
     >
-      <NuxtLink :to="'tour/'+feature.slug2" class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300">
+      <NuxtLink :to="'tour/'+feature.slug2" :area-label="feature.location" class="aspect-[350/250] bg-muted overflow-x-hidden group-hover:scale-[1.1] duration-300">
         <NuxtImg :src="feature.img" alt="" class="aspect-[350/250] w-full object-cover" />
       </NuxtLink>
       <div class="bg-[#fff] translate-y-[-20px] mb-[-20px] rounded-md p-4">
         <p class="text-small font-bold text-muted">
           {{ feature.location }}
         </p>
-        <h3 class="h5">{{ feature.title }}</h3>
+        <h2 class="h5">{{ feature.title }}</h2>
         <div class="flex gap-2 items-center">
           <span>
             {{ feature.days }} <span class="body-bold">Days</span>

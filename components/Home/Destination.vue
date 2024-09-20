@@ -1,27 +1,27 @@
 <template>
   <div class="max-w-[1450px] mx-auto px-[10px] md:py-10 py-6">
-    <p class="h5 text-center text-primary">Explore the world</p>
+    <p class="h5 text-center text-primary">Explore Nepal's Wonders</p>
     <h2 class="extra-h1 leading-[1.1] mx-auto py-6 max-w-[720px] text-center">
-      Check Our Top <span class="font_family text-muted">Tourist</span> Destination
+      Check Out Nepal's Top <span class="font_family text-muted">Tourist</span> Destinations
     </h2>
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
       <div
-        class="relative group overflow-hidden  cursor-pointer flex flex-1 items-center flex-col justify-center"
+        class="relative group overflow-hidden cursor-pointer flex flex-1 items-center flex-col justify-center"
         v-for="(item, index) in destination"
         :key="index"
       >
-        <NuxtLink :to="'tour/' + item.slug2" class="group-hover:scale-110 duration-300">
+        <NuxtLink :to="'/tour/' + item.slug2" class="group-hover:scale-110 duration-300">
           <img
             :src="item.image"
-            alt=""
+            alt="Tourist destination in Nepal"
             class="aspect-[350/250] w-full h-auto object-cover transform transition-transform duration-500"
           />
         </NuxtLink>
-          <p
-            class="absolute right-4 top-4 z-10 bg-accent py-[4px] px-4 rounded-md font-bold text-white"
-          >
-            {{ item.tour_count }} TOURS
-          </p>
+        <p
+          class="absolute right-4 top-4 z-10 bg-accent py-[4px] px-4 rounded-md font-bold text-gray-900"
+        >
+          {{ item.tour_count }} TOURS
+        </p>
 
         <div
           class="relative mt-[-49px] w-[90.5%] bg-white rounded-[6px] p-[10px] shadow-[0px_4px_17px_0px_rgba(0,_0,_0,_0.06)]"
@@ -29,15 +29,14 @@
           <h3
             class="relative h5 top-[-10px] text-white left-[-10px] w-[61%] bg-primary text-left font-semibold leading-[28.5px] uppercase p-[7px_15px] [border-top-left-radius:6px] duration-300 ease-in-out after:content-[''] after:absolute after:right-[-25px] after:bottom-0 after:m-[0_auto] after:w-0 after:h-0 after:[border-top:_43px_solid_#4da528] after:[border-left:_25px_solid_transparent] after:[border-right:_25px_solid_transparent]"
           >
-            <a
-              href="https://vitourwp.themesflat.co/ba_booking-locations/united-state/"
-            >
-              {{ item.destination_name }}
-            </a>
+            <NuxtLink :to="'/destination/' + item.slug2">{{ item.destination_name }}</NuxtLink>
           </h3>
           <div class="flex justify-between items-center p-[3px_9px_5px]">
-            <p >View all tours</p>
-            <a href="#" class="h-[42px] w-[42px] bg-gray-200 rounded-full flex justify-center items-center">
+            <p>View all tours in {{ item.destination_name }}</p>
+            <NuxtLink
+              :to="'/destination/' + item.slug2"
+              class="h-[42px] w-[42px] bg-gray-200 rounded-full flex justify-center items-center"
+            >
               <svg
                 width="24"
                 height="24"
@@ -52,22 +51,22 @@
                   />
                 </g>
               </svg>
-            </a>
+            </NuxtLink>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
 <script setup lang="ts">
-import featureImg from "../../assets/img/destination/tour-feature-1.webp";
-import tourImage from "../../assets/img/destination/tour-feature-1.webp";
 import kathmandu from "../../assets/img/destination/kathmandu.webp";
-import kathmandu2 from "../../assets/img/destination/kathmadu2.webp";
-import pokhara2 from "../../assets/img/destination/pokhara3.webp";
-import lumbini from "../../assets/img/destination/lumbini.webp";
 import bharatnager from "../../assets/img/destination/bh.webp";
 import dharan from "../../assets/img/destination/dh3.webp";
+import pokhara2 from "../../assets/img/destination/pokhara3.webp";
+import lumbini from "../../assets/img/destination/lumbini.webp";
+import featureImg from "../../assets/img/destination/tour-feature-1.webp";
+
 interface Destination {
   image: string;
   tour_count: number;
@@ -79,38 +78,38 @@ const destination: readonly Destination[] = [
   {
     image: kathmandu,
     tour_count: 3,
-    destination_name: "kathmandu",
-    slug2: "dharan-hiking-tour",
+    destination_name: "Kathmandu",
+    slug2: "kathmandu-hiking-tour",
   },
   {
     image: bharatnager,
     tour_count: 3,
-    destination_name: "biratnagar",
-    slug2: "lumbini-birthplace-of-resurrection",
+    destination_name: "Biratnagar",
+    slug2: "biratnagar-cultural-experience",
   },
   {
     image: dharan,
     tour_count: 3,
-    destination_name: "dharan",
+    destination_name: "Dharan",
     slug2: "dharan-city-exploration",
   },
   {
     image: pokhara2,
     tour_count: 3,
-    destination_name: "pokhara",
-    slug2: "biratnagar-cultural-experience",
+    destination_name: "Pokhara",
+    slug2: "pokhara-sarangkot-sunrise",
   },
   {
     image: featureImg,
     tour_count: 3,
-    destination_name: "lumbini",
-    slug2: "pokhara-sarangkot-sunrise",
+    destination_name: "Lumbini",
+    slug2: "lumbini-buddha-birthplace-tour",
   },
   {
     image: lumbini,
     tour_count: 3,
-    destination_name: "lumbini",
-    slug2: "pokhara-lakeside",
+    destination_name: "Lumbini",
+    slug2: "lumbini-peace-stupa-tour",
   },
 ];
 </script>
@@ -118,8 +117,7 @@ const destination: readonly Destination[] = [
 <style scoped lang="scss">
 @import "../../assets/scss/_function.scss";
 
-.font_family{
-  font-family:fontFamily(cursive);
+.font_family {
+  font-family: fontFamily(cursive);
 }
-
 </style>
