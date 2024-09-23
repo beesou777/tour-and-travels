@@ -1,52 +1,47 @@
 <template>
-  <div class="max-w-[1445px] mx-auto px-[10px] py-5" v-if="tourData">
-    <h2>Overview</h2>
-    <p class="text-gray-500 py-4 max-w-[720px]">
-      {{tourData.overview}}
-    </p>
-
-    <h3 class="h3 py-2">Highlights</h3>
-    <ul>
-      <li v-for="high in tourData.highlights" :key="high">Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-      <li>{{high}}</li>
-    </ul>
-
-    <h3 class="h3 py-2">What's Included</h3>
-    <ul>
-      <li class="flex items-center gap-4 py-2" v-for="inc in tourData.included" :key="inc">
+  <div class="col-span-7" v-if="tourData">
+    <div class="flex justify-between">
+     <div class="flex flex-col gap-2">
+       <h1 class="h1">{{ tourData.tour_title }}</h1>
+       <span>{{tourData.tour_code}}</span>
+     </div>
+      <span
+        class="flex flex-col items-center rounded-[8px] w-[70px] [box-shadow:_0px_4px_8px_rgba(0,_0,_0,_.04),_0px_0px_2px_rgba(0,_0,_0,_.06),_0px_0px_1px_rgba(0,_0,_0,_.04)]"
+      >
         <span
-          class="bg-gray-200 rounded-full p-2 h-[42px] w-[42px] flex justify-center items-center"
+          class="extra-h1 bg-secondary flex justify-center text-white w-full"
         >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M7.80018 20.5299C7.40631 20.5306 7.01617 20.4535 6.65218 20.303C6.28819 20.1525 5.95753 19.9315 5.67918 19.6529L0.0861816 14.0609L1.50018 12.6459L7.09318 18.2389C7.28071 18.4263 7.53502 18.5316 7.80018 18.5316C8.06535 18.5316 8.31965 18.4263 8.50718 18.2389L22.5002 4.24585L23.9142 5.65985L9.92118 19.6529C9.64283 19.9315 9.31217 20.1525 8.94818 20.303C8.58419 20.4535 8.19406 20.5306 7.80018 20.5299Z"
-              fill="#4da528"
-            />
-          </svg>
+          {{ tourData.tour_duration }}
         </span>
-        <span>{{inc}}</span>
-      </li>
-    </ul>
+        <span class="days flex justify-center py-1"> Days </span>
+      </span>
+    </div>
+    <tour-tabs>
+      <template #tab1>
+        <tour-tab-information :data="tourData" />
+      </template>
+      <template #tab2>
+        <tour-tab-itinerary :data="tourData" />
+      </template>
+
+      <template #tab3>
+        <tour-tab-packages :data="tourData" />
+      </template>
+
+      <template #tab4>
+        <tour-tab-location />
+      </template>
+    </tour-tabs>
   </div>
 </template>
 <script setup lang="ts">
-
 const props = defineProps({
   tourData: {
     type: Object,
   },
 });
 
-const {tourData} = toRefs(props)
-
-
-
+const { tourData } = toRefs(props);
 </script>
 <style scoped lang="scss">
 </style>

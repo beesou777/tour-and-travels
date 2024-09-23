@@ -1,0 +1,1277 @@
+[
+    {
+        "tour_code": "TH - 004",
+        "tour_title": "Mystical Nepal Tour",
+        "slug": "mystical-nepal-tour",
+        "tour_duration": 7,
+        "lat": 27.7104,
+        "lng": 85.2904,
+        "map_details": [
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.62264868622523,
+                "lng": 85.3634584018787
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 28.773020824779707,
+                "lng": 83.77400865642275
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 28.211170307284377,
+                "lng": 83.98166129722624
+            }
+        ],
+        "destinations_covered": [
+            "Kathmandu",
+            "Pokhara",
+            "Jomsom"
+        ],
+        "product_description": "Himalayan Trio as the name suggests it covers two most popular valley tour of the country, Kathmandu and Pokhara. This tour is a fine blend of religion, culture and nature. Kathmandu- the city of temples covers core religious and historically important UNESCO World Heritage sites; where travelers can understand culture and lifestyle of Nepalese people. This tour also covers Pokhara - known as Switzerland of Asia which gives magnificent view of western Himalayan ranges including Mt Fishtail, Annapurna, Dhaulagiri and other mountain peaks, lakes, waterfall, etc. Also Muktinath is a Vishnu temple, sacred to both Hindus and Buddhists. It is located in Muktinath Valley at the foot of the Thorong La mountain pass in Mustang, Nepal. It is one of the world's highest temples. Within Hinduism, it is one of the 108 Divya Desams, and is the only Divya Desam located outside India. Beside the popular Pilgrimage, nature and cultural site tour, during this tour one can be involved in various adventure activity, night life, casinos, discotheques, shopping, etc.",
+        "outlined_itinerary": [
+            "Day 01: Arrival in Tribhuvan International airport",
+            "Day 02: Kathmandu sightseeing tour",
+            "Day 03: Drive to Pokhara",
+            "Day 04: Fly Jomsom & sightseeing",
+            "Day 05: Fly Pokhara & sightseeing tour",
+            "Day 06: Drive back Kathmandu",
+            "Day 07: International departure"
+        ],
+        "detailed_itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive in Kathmandu",
+                "description": "Once you arrive at the Tribhuvan International Airport in Kathmandu, look out for our representative who will be holding a placard with your name on it. A short drive and you will be in your hotel, our tour officer will help you complete all the check-in procedure and brief you about tour itinerary. In the evening you can head over to Thamel, the main tourist hub where you can have some good time at the bar or a club on own. Overnight stay in Kathmandu."
+            },
+            {
+                "day": 2,
+                "title": "Kathmandu City Tour",
+                "description": "Today you get to kick-start your cultural discovery! Visit Pashupatinath Temple, Boudhanath Stupa, Patan Durbar Square, Swoyambhunath Stupa, and more. The day is filled with cultural landmarks of Kathmandu. Overnight in Kathmandu."
+            },
+            {
+                "day": 3,
+                "title": "Drive to Pokhara",
+                "description": "Following breakfast, our adventure begins with a scenic drive to Pokhara (210km, 7-8 hrs drive) offering views of rivers, terrace fields, and captivating views of the Annapurna range. Optional visit to Manakamana Devi Temple by cable car. Overnight in Pokhara."
+            },
+            {
+                "day": 4,
+                "title": "Fly to Jomsom & Drive Muktinath",
+                "description": "Early morning transfer to airport for flight to Jomsom. Drive to Muktinath for the temple visit. Return to Jomsom. Overnight in Jomsom."
+            },
+            {
+                "day": 5,
+                "title": "Fly back to Pokhara & Sightseeing Tour",
+                "description": "Fly back to Pokhara, visit Bindabasini Temple, Davis Falls, Mahadev Cave, and Seti Gorge. Stroll the lakeside area in the evening. Overnight in Pokhara."
+            },
+            {
+                "day": 6,
+                "title": "Drive back to Kathmandu",
+                "description": "After breakfast, drive back to Kathmandu. Rest of the day free at leisure. Overnight in Kathmandu."
+            },
+            {
+                "day": 7,
+                "title": "Depart Kathmandu",
+                "description": "Our representative will drop you off at the airport three hours prior to flight departure."
+            }
+        ],
+        "tour_costs": {
+            "currency": "INR",
+            "pricing": [
+                {
+                    "category": "5_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 71200
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 65300
+                        }
+                    ]
+                },
+                {
+                    "category": "5_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 53800
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 48600
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 47300
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 42200
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 45600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 40400
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 42400
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 37300
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 40600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 34500
+                        }
+                    ]
+                }
+            ]
+        },
+        "tour_cost_includes": [
+            "Special traditional welcome on arrival at International airport",
+            "Airport-Hotel-Airport transfers on private vehicle",
+            "03 Night Double/Twin sharing accommodation at Kathmandu",
+            "02 Night Double/Twin sharing accommodation at Pokhara",
+            "01 Night Double/Twin sharing accommodation at Jomsom",
+            "Daily breakfast at hotel",
+            "Lunch & Dinner at hotel in Jomsom",
+            "Sightseeing and transfer as per the itinerary by private A/C vehicle",
+            "Jomsom/Muktinath/Jomsom by SIC vehicle",
+            "Pokhara/Jomsom/Pokhara by Flight",
+            "01 Full day Kathmandu city tour",
+            "01 Full day Pokhara city tour",
+            "01 Full day Muktinath Darshan",
+            "ACAP Permit",
+            "Mineral Water on board during sightseeing tour",
+            "Local Sim card with 4G facilities returnable",
+            "All applicable taxes"
+        ],
+        "hotels": [
+            {
+                "category": "5* Premium",
+                "kathmandu": "Kathmandu Marriot Hotel",
+                "pokhara": "Sarangkot Mountain Lodge",
+                "jomsom": "Hotel Lo Mustang"
+            },
+            {
+                "category": "5* Deluxe",
+                "kathmandu": "Hyatt Regency Kathmandu/ Dusit Princess Kathmandu",
+                "pokhara": "Fishtail Lodge by Annapurna",
+                "jomsom": "Hotel Lo Mustang"
+            },
+            {
+                "category": "4* Premium",
+                "kathmandu": "Aloft Kathmandu Thamel",
+                "pokhara": "Mountain Glory Forest Resort & Spa",
+                "jomsom": "Hotel Oms Home"
+            },
+            {
+                "category": "4* Deluxe",
+                "kathmandu": "Hotel Everest/ Hotel Barahi Kathmandu",
+                "pokhara": "Hotel Barahi Pokhara",
+                "jomsom": "Hotel Shaligram"
+            },
+            {
+                "category": "3* Premium",
+                "kathmandu": "Hotel Grand",
+                "pokhara": "Hotel Aabas Pokhara",
+                "jomsom": "Hotel Shaligram"
+            },
+            {
+                "category": "3* Deluxe",
+                "kathmandu": "Hotel Simal/Hotel Yu Khang",
+                "pokhara": "Hotel Queenspark",
+                "jomsom": "Hotel Shaligram"
+            }
+        ],
+        "tour_cost_excludes": [
+            "Meals, Licensed holder tour guide during sightseeing",
+            "Entrance & monument fees, Manakamana cable car fee",
+            "Bar bills, Laundry bills, Tips and all other expenses except mentioned in package includes heading",
+            "Baggage and personal expenses",
+            "Any other expenses due to political, Act of nature or any other reason which are beyond control of Travelers Himalaya or its associate agents"
+        ],
+        "notes": [
+            "Rate is valid for Indian Passport/Voters ID card and Valid till March 2025.",
+            "Airport transfer Supplement charges will be applicable before 8:00 A.M & after 8:00 P.M.",
+            "Accommodation in Kathmandu will be Star Category as mentioned. Similar category accommodations will be used in other destinations.",
+            "Vehicle will not be at disposal but will perform activities as per the Package Inclusions on point to point basis.",
+            "The above program is just the guideline and can be customized as per your requirements."
+        ]
+    },
+    {
+        "tour_code": "TH - 002",
+        "tour_title": "MYSTIC VALLEYS & MOUNTIAN VIEWS TOUR",
+        "slug": "mystic-valleys-&-mountain-views-tour",
+        "tour_duration": 3,
+        "map_details": [
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.71692487467829,
+                "lng": 85.50361926007999
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.714273264180438,
+                "lng": 85.31737684584914
+            }
+        ],
+        "destinations_covered": [
+            "Kathmandu",
+            "Nagarkot"
+        ],
+        "product_description": "Kathmandu, the largest city of Nepal, is the political as well as cultural capital of the country. Kathmandu is a city where ancient traditions rub shoulders with the latest technological advances. Kathmandu Valley has a rich aesthetic and cultural legacy. Intricate wood carvings, distinctive temples, sculptures, bronze crafts, terracotta works, and the unique lifestyle of its people still thrive at. Nestled on the northern fringe of the Kathmandu Valley, Nagarkot is a captivating destination. This idyllic hill station boasts unparalleled natural beauty and offers enchanting sunrise views over the Himalayas.",
+        "outlined_itinerary": [
+            "Day 01: Arrival in Kathmandu and Overnight.",
+            "Day 02: Full Day Kathmandu Sightseeing and Overnight",
+            "Day 03: Drive to Nagarkot, Enroute Bhaktapur and Overnight",
+            "Day 04: Departure"
+        ],
+        "detailed_itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive in Kathmandu",
+                "description": "Once you arrive at the Tribhuvan International Airport in Kathmandu, look out for our representative who will be holding a placard with your name on it. A short drive and you will be in your hotel, our tour officer will help you complete all the check-in procedure and brief you about tour itinerary. Overnight stay in Kathmandu."
+            },
+            {
+                "day": 2,
+                "title": "Full day Kathmandu sightseeing",
+                "description": "Enjoy your morning breakfast. Today, you will start a journey of cultural exploration! Starting from Kathmandu, the nerve center of Nepal, we will arrange a variety of sightseeing activities for you.  Begin your tour with the holiest Pashupatinath Temple.  According to religious beliefs, Lord Pashupatinath is the almighty God and the savior of all mankind. Therefore, it is said that all Hindus should make a pilgrimage to the Pashupatinath temple at least once in their lives to pray for eternal peace and salvation.Then visit to Swayambhunath Temple also known as the Monkey Temple. Resting on a hillock 3 km west of Kathmandu, Swayambhu is one of the holiest Buddhist stupas in Nepal. It is said to have evolved spontaneously when the valley was created out of a primordial lake more than 2,000 years ago. This stupa is the oldest of its kind in Nepal and has numerous shrines and monasteries on its premises.In the afternoon visit Boudhanath Stupa, the largest Buddhist stupa in the world, built in the fifth century. Before today's stupa was built, it was a campsite for Tibetan merchants. Today, it is the best place to observe Tibetan lifestyle, culture and religious activities of monks. It is also rich in Tibetan products such as Tibetan jewelry, hand-woven carpets, thangkas, masks, kukuli, knives and other Tibetan products.In the evening proceed Patan Durbar Square & Golden Temple. Patan is one of the oldest Buddhist cities. It is a center of both Hinduism and Buddhism with 136 bahals or courtyards and 55 major temples.  Most of these structures are in the vicinity of the Durbar Square. The Golden Temple with literal meaning \"Gold-colored Great Monastery,\", is a historical vihara (Buddhist monastery) situated in Patan. Overnight in Kathmandu"
+            },
+            {
+                "day": 3,
+                "title": "Drive to Nagarkot, enroute Bhaktapur",
+                "description": "Enjoy your morning breakfast. Check out of your hotel and drive to Nagarkot (32km, 1.5 hrs. drive). Enroute Visit Bhaktapur . After breakfast check out and head for your Bhaktapur sightseeing. Bhaktapur, commonly known as the “city of worshippers,” is also known as the “city of temples.” Visit, Bhaktapur Durbar Square, ancient temples and shrines, sculptures and historical heritage sites constructed in different eras carry the identity of this city. Highlights of the ancient’s Nepali art like golden gate, 55 Window Temple, etc. can be observed in one place here. Nagarkot is known for its spectacular sunrise and sunset views. Nagarkot is believed to be a rich home for different species of butterflies. The hill-town even offers a panoramic view of the entire Kathmandu Valley Check in at your hotel and enjoy the remaining day at leisure.  Overnight in Nagarkot."
+            },
+            {
+                "day": 4,
+                "title": "Departure transfer",
+                "description": "Enjoy sunrise over the panoramic view of Himalayas from hotel premises (if weather Permits). After breakfast, our cheerful representative will drop you off to the airport three hours prior to the flight departure. The mystic land of the Himalayas holds many more secrets to be told. Come back again for another adventure visiting our spectacular mountains"
+            }
+        ],
+        "tour_costs": {
+            "currency": "INR",
+            "pricing": [
+                {
+                    "category": "3_star",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 9500
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 8100
+                        },
+                        {
+                            "group_size": "single_supliment",
+                            "price": 6300
+                        },
+                        {
+                            "group_size": "child_with_bed",
+                            "price": 6900
+                        },
+                        {
+                            "group_size": "child_without_bed",
+                            "price": 3900
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 10800
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 9500
+                        },
+                        {
+                            "group_size": "single_supliment",
+                            "price": 5500
+                        },
+                        {
+                            "group_size": "child_with_bed",
+                            "price": 7500
+                        },
+                        {
+                            "group_size": "child_without_bed",
+                            "price": 4300
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 12000
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 10700
+                        },
+                        {
+                            "group_size": "single_supliment",
+                            "price": 6500
+                        },
+                        {
+                            "group_size": "child_with_bed",
+                            "price": 8400
+                        },
+                        {
+                            "group_size": "child_without_bed",
+                            "price": 4800
+                        }
+                    ]
+                },
+                {
+                    "category": "5_star",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 14700
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 13800
+                        },
+                        {
+                            "group_size": "single_supliment",
+                            "price": 11400
+                        },
+                        {
+                            "group_size": "child_with_bed",
+                            "price": 10300
+                        },
+                        {
+                            "group_size": "child_without_bed",
+                            "price": 5900
+                        }
+                    ]
+                },
+                {
+                    "category": "5_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 17900
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 16700
+                        },
+                        {
+                            "group_size": "single_supliment",
+                            "price": 13500
+                        },
+                        {
+                            "group_size": "child_with_bed",
+                            "price": 12600
+                        },
+                        {
+                            "group_size": "child_without_bed",
+                            "price": 7200
+                        }
+                    ]
+                }
+            ]
+        },
+        "tour_cost_includes": [
+            "Airport pickup/drop using private vehicle",
+            "02 nights’ accommodation in  Double/Twin sharing at hotels in Kathmandu",
+            "01 nights’ accommodation in  Double/Twin sharing at hotels in Nagarkot",
+            "Kathmandu/Nagarkot/Kathmandu by private A/C Deluxe Vehicle",
+            "All sightseeing transfers using private a/c vehicle",
+            "Daily Breakfast at hotel",
+            "Mineral Water on board during sightseeing tour",
+            "All applicable taxes."
+        ],
+        "hotels": [
+            {
+                "category": "3*",
+                "kathmandu": "Hotel Simal/Hotel Yu Khang/ Similar",
+                "nagarkot": "Hotel Himalayan Villa/Similar"
+            },
+            {
+                "category": "4*",
+                "kathmandu": "Hotel Grand/Similar",
+                "pokhara": "The Fort Resort/Similar",
+                "chitwan": "Soaltee Westend Resort",
+                "nagarkot": "Hotel Mystic Mountain"
+            },
+            {
+                "category": "4* Premium",
+                "kathmandu": "Hotel Shambala/ Similar",
+                "nagarkot": "Hotel Country Villa/Similar"
+            },
+            {
+                "category": "5*",
+                "kathmandu": "Hotel Yak & Yeti/ Similar",
+                "nagarkot": "Tayo Eco Resort/ Similar"
+            },
+            {
+                "category": "5* Premium",
+                "kathmandu": "Hyatt Regency Kathmandu / Similar",
+                "nagarkot": "Hotel Mystic Mountain/ Similar"
+            }
+        ],
+        "tour_cost_excludes": [
+            "Airfare to/from Nepal.",
+            "Nepal visa fee - available upon arrival at Kathmandu airport – USD 25.00 per person for multiple entry up to 15 days. (VISA NOT REQUIRED FOR INDIAN PASSPORT HOLDER)",
+            "Lunch & Dinner ",
+            "Beverage and expenses of personal nature.",
+            "Any Optional Sightseeing Tours and extension of tours, hotel accommodation etc.",
+            "Tips to guide, porters, drivers etc.",
+            "Personal Insurance."
+        ]
+    },
+    {
+        "tour_code": "TH - 003",
+        "tour_title": "Himalayan Wonder Tour Package ",
+        "slug": "himalayan_wonder_tour_package",
+        "tour_duration": 7,
+        "map_details": [
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 26.761636982878027,
+                "lng": 83.37505653235941
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 28.211170307284377,
+                "lng": 83.98166129722624
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.714273264180438,
+                "lng": 85.31737684584914
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.9207,
+                "lng": 82.7347
+            }
+        ],
+        "destinations_covered": [
+            "Gorakpur",
+            "Lumbini",
+            "Pokhara",
+            "Kathmandu & Gorakhpur"
+        ],
+        "detailed_itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive in Gorakhpur & transfer to Lumbini",
+                "description": "Once you arrive at Gorakhpur, Please call our driver & he will transfer you to the Lumbini hotel (3 hrs). Arrive Lumbini hotel, Check into the hotel , Get refreshed & proceed for sightseeing covering :- Maya devi temple, Monastries & Ashoka Pillar. Back to hotel  & Overnight"
+            },
+            {
+                "day": 2,
+                "title": "drive to Pokhara",
+                "description": "Following breakfast, our adventure begins road trip to Pokhara (7 hrs approx.). Pokhara, the 'Tourist Capital of Nepal,' at an altitude of more than 900m, it is one of the highest cities, making it the base for many world-famous treks. The highlight of the town is its Lakeside, which is a boating paradise flanked with charming shops, dreamy cafés, restaurants and pubs that make up this postcard-perfect town. Once you arrive in Pokhara transfer to designated hotel and check-in. Feel free to take a stroll through the city in the evening or relax by the lakeside. Overnight in Pokhara"
+            },
+            {
+                "day": 3,
+                "title": "half day Pokhara sightseeing",
+                "description": "Enjoy your morning breakfast at hotel. Then proceed for your sightseeing. Visit to Bindhabasini Temple dedicated to goddess Durga- the deity of supreme power, right in the center of the bazaar. The 16th century architecture is sure to delight you. Davis falls, or “Patale Changgo” in Nepali is actually an underground waterfall. The water flows under the ground through its natural tunnel of 500 feet from the fall made by the water currents beneath the land. Move towards Mahadev Cave, also known as Gupteshwor Cave is limestone cave with its shrine desiccated to Lord Shiva.  The cave is said to have been discovered in 16th Century. Watch the Seti Gorge standing atop the Mahendra Pul. Flowing right through the city, the river runs completely underground at places. Also, visit World Peace Pagoda, situated at the height of 1100 meters on the Anadu Hill. After returning back to lakeside, hop on the boat for an hour boat ride in Fewa Lake. Overnight in Pokhara."
+            },
+            {
+                "day": 4,
+                "title": "drive to Kathmandu",
+                "description": "After Breakfast, we take a long drive to Kathmandu (9 hrs). Enroute visit Manakamana Temple (Optional). Upon arrival in Kathmandu check in at your hotel and relax the remaining time of your own at leisure. Overnight in Kathmandu"
+            },
+            {
+                "day": 5,
+                "title": "Full day Kathmandu sightseeing",
+                "description": "Enjoy your morning breakfast. Today, you will start a journey of cultural exploration! Starting from Kathmandu, the nerve center of Nepal, we will arrange a variety of sightseeing activities for you.  Begin your tour with the holiest Pashupatinath Temple.  According to religious beliefs, Lord Pashupatinath is the almighty God and the savior of all mankind. Therefore, it is said that all Hindus should make a pilgrimage to the Pashupatinath temple at least once in their lives to pray for eternal peace and salvation.Then visit to Swayambhunath Temple also known as the Monkey Temple. Resting on a hillock 3 km west of Kathmandu, Swayambhu is one of the holiest Buddhist stupas in Nepal. It is said to have evolved spontaneously when the valley was created out of a primordial lake more than 2,000 years ago. This stupa is the oldest of its kind in Nepal and has numerous shrines and monasteries on its premises.In the afternoon visit Boudhanath Stupa, the largest Buddhist stupa in the world, built in the fifth century. Before today's stupa was built, it was a campsite for Tibetan merchants. Today, it is the best place to observe Tibetan lifestyle, culture and religious activities of monks. It is also rich in Tibetan products such as Tibetan jewelry, hand-woven carpets, thangkas, masks, kukuli, knives and other Tibetan products.In the evening proceed Patan Durbar Square & Golden Temple. Patan is one of the oldest Buddhist cities. It is a center of both Hinduism and Buddhism with 136 bahals or courtyards and 55 major temples.  Most of these structures are in the vicinity of the Durbar Square. The Golden Temple with literal meaning \"Gold-colored Great Monastery,\" is a historical vihara (Buddhist monastery) situated in Patan. Overnight in Kathmandu."
+            },
+            {
+                "day": 6,
+                "title": "Drive to Lumbini",
+                "description": "After Breakfast, Check out from the Kathmandu hotel & drop to Lumbini (10 HRS). Arrive Lumbini, Check into the lumbini hotel & Overnight"
+            },
+            {
+                "day": 7,
+                "title": "Departure",
+                "description": "After breakfast free time until departure. Our tour escort will timely drop you to airport 3 hour prior flight time for final departure. The mystic land of the Himalayas holds many more secrets to be told. Come back again for another adventure visiting our spectacular mountains."
+            }
+        ],
+        "tour_costs": {
+            "currency": "INR",
+            "pricing": [
+                {
+                    "category": "3_star",
+                    "pricing_details": [
+                        {
+                            "group_size": "03 Pax",
+                            "price": 29300
+                        }
+                    ]
+                }
+            ]
+        },
+        "tour_cost_includes": [
+            "Airport pickup/drop using private vehicle",
+            "02 nights’ accommodation in  Triple sharing at hotels in Kathmandu",
+            "02 nights’ accommodation in  Triple sharing at hotels in Pokhara",
+            "02 nights’ accommodation in  Triple sharing at hotels in Lumbini",
+            "Gorakpur/Pokhara/Kathmandu/Lumbini/Gorakpur by private A/C Deluxe Sedan Car",
+            "All sightseeing transfers using private a/c vehicle",
+            "Daily Breakfast & Dinner  at hotel",
+            "Mineral Water on board during sightseeing tour",
+            "All applicable taxes"
+        ],
+        "hotels": [
+            {
+                "category": "3*",
+                "kathmandu": "Hotel Le Himalayan/ Similar",
+                "pokhara": "Hotel White Pearl/ Similar",
+                "lumbini": "Hotel Asian Buddha/ Similar"
+            }
+        ],
+        "tour_cost_excludes": [
+            "Airfare to/from Nepal.",
+            "Nepal visa fee - available upon arrival at Kathmandu airport – USD 25.00 per person for multiple entry up to 15 days. (VISA NOT REQUIRED FOR INDIAN PASSPORT HOLDER)",
+            "Beverage and expenses of personal nature",
+            "Any Optional Sightseeing Tours and extension of tours, hotel accommodation etc.",
+            "Tips to guide, porters, drivers etc.",
+            "Personal Insurance."
+        ]
+    },
+    {
+        "tour_code": "TH - 001",
+        "tour_title": "Mystical Nepal Tour",
+        "slug": " mystical_nepal_tour",
+        "tour_duration": 7,
+        "map_details": [
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.667158744651303,
+                "lng": 85.20542175595058
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.714273264180438,
+                "lng": 85.31737684584914
+            }
+        ],
+        "destinations_covered": [
+            "Kathmandu",
+            "Pokhara",
+            "Jomsom"
+        ],
+        "product_description": "Himalayan Trio as the name suggests it covers two most popular valley tour of the country, Kathmandu and Pokhara. This tour is a fine blend of religion, culture and nature. Kathmandu- the city of temples covers core religious and historically important UNESCO World Heritage sites; where travelers can understand culture and lifestyle of Nepalese people. This tour also covers Pokhara - known as Switzerland of Asia which gives magnificent view of western Himalayan ranges including Mt Fishtail, Annapurna, Dhaulagiri and other mountain peaks, lakes, waterfall, etc. Also Muktinath is a Vishnu temple, sacred to both Hindus and Buddhists. It is located in Muktinath Valley at the foot of the Thorong La mountain pass in Mustang, Nepal. It is one of the world's highest temples. Within Hinduism, it is one of the 108 Divya Desams, and is the only Divya Desam located outside India. Beside the popular Pilgrimage, nature and cultural site tour, during this tour one can be involved in various adventure activity, night life, casinos, discotheques, shopping, etc.",
+        "outlined_itinerary": [
+            "Day 01: Arrival in Tribhuvan International airport",
+            "Day 02: Kathmandu sightseeing tour",
+            "Day 03: Drive to Pokhara",
+            "Day 04: Fly Jomsom & sightseeing",
+            "Day 05: Fly Pokhara & sightseeing tour",
+            "Day 06: Drive back Kathmandu",
+            "Day 07: International departure"
+        ],
+        "detailed_itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive in Kathmandu",
+                "description": "Once you arrive at the Tribhuvan International Airport in Kathmandu, look out for our representative who will be holding a placard with your name on it. A short drive and you will be in your hotel, our tour officer will help you complete all the check-in procedure and brief you about tour itinerary. In the evening you can head over to Thamel, the main tourist hub where you can have some good time at the bar or a club on own. Overnight stay in Kathmandu."
+            },
+            {
+                "day": 2,
+                "title": "Kathmandu City Tour",
+                "description": "Today you get to kick-start your cultural discovery! Visit Pashupatinath Temple, Boudhanath Stupa, Patan Durbar Square, Swoyambhunath Stupa, and more. The day is filled with cultural landmarks of Kathmandu. Overnight in Kathmandu."
+            },
+            {
+                "day": 3,
+                "title": "Drive to Pokhara",
+                "description": "Following breakfast, our adventure begins with a scenic drive to Pokhara (210km, 7-8 hrs drive) offering views of rivers, terrace fields, and captivating views of the Annapurna range. Optional visit to Manakamana Devi Temple by cable car. Overnight in Pokhara."
+            },
+            {
+                "day": 4,
+                "title": "Fly to Jomsom & Drive Muktinath",
+                "description": "Early morning transfer to airport for flight to Jomsom. Drive to Muktinath for the temple visit. Return to Jomsom. Overnight in Jomsom."
+            },
+            {
+                "day": 5,
+                "title": "Fly back to Pokhara & Sightseeing Tour",
+                "description": "Fly back to Pokhara, visit Bindabasini Temple, Davis Falls, Mahadev Cave, and Seti Gorge. Stroll the lakeside area in the evening. Overnight in Pokhara."
+            },
+            {
+                "day": 6,
+                "title": "Drive back to Kathmandu",
+                "description": "After breakfast, drive back to Kathmandu. Rest of the day free at leisure. Overnight in Kathmandu."
+            },
+            {
+                "day": 7,
+                "title": "Depart Kathmandu",
+                "description": "Our representative will drop you off at the airport three hours prior to flight departure."
+            }
+        ],
+        "tour_costs": {
+            "currency": "INR",
+            "pricing": [
+                {
+                    "category": "5_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 71200
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 65300
+                        }
+                    ]
+                },
+                {
+                    "category": "5_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 53800
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 48600
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 47300
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 42200
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 45600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 40400
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 42400
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 37300
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 40600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 34500
+                        }
+                    ]
+                }
+            ]
+        },
+        "tour_cost_includes": [
+            "Special traditional welcome on arrival at International airport",
+            "Airport-Hotel-Airport transfers on private vehicle",
+            "03 Night Double/Twin sharing accommodation at Kathmandu",
+            "02 Night Double/Twin sharing accommodation at Pokhara",
+            "01 Night Double/Twin sharing accommodation at Jomsom",
+            "Daily breakfast at hotel",
+            "Lunch & Dinner at hotel in Jomsom",
+            "Sightseeing and transfer as per the itinerary by private A/C vehicle",
+            "Jomsom/Muktinath/Jomsom by SIC vehicle",
+            "Pokhara/Jomsom/Pokhara by Flight",
+            "01 Full day Kathmandu city tour",
+            "01 Full day Pokhara city tour",
+            "01 Full day Muktinath Darshan",
+            "ACAP Permit",
+            "Mineral Water on board during sightseeing tour",
+            "Local Sim card with 4G facilities returnable",
+            "All applicable taxes"
+        ],
+        "hotels": [
+            {
+                "category": "5* Premium",
+                "kathmandu": "Kathmandu Marriot Hotel",
+                "pokhara": "Sarangkot Mountain Lodge",
+                "jomsom": "Hotel Lo Mustang"
+            },
+            {
+                "category": "5* Deluxe",
+                "kathmandu": "Hyatt Regency Kathmandu/ Dusit Princess Kathmandu",
+                "pokhara": "Fishtail Lodge by Annapurna",
+                "jomsom": "Hotel Lo Mustang"
+            },
+            {
+                "category": "4* Premium",
+                "kathmandu": "Aloft Kathmandu Thamel",
+                "pokhara": "Mountain Glory Forest Resort & Spa",
+                "jomsom": "Hotel Oms Home"
+            },
+            {
+                "category": "4* Deluxe",
+                "kathmandu": "Hotel Everest/ Hotel Barahi Kathmandu",
+                "pokhara": "Hotel Barahi Pokhara",
+                "jomsom": "Hotel Shaligram"
+            },
+            {
+                "category": "3* Premium",
+                "kathmandu": "Hotel Grand",
+                "pokhara": "Hotel Aabas Pokhara",
+                "jomsom": "Hotel Shaligram"
+            },
+            {
+                "category": "3* Deluxe",
+                "kathmandu": "Hotel Simal/Hotel Yu Khang",
+                "pokhara": "Hotel Queenspark",
+                "jomsom": "Hotel Shaligram"
+            }
+        ],
+        "tour_cost_excludes": [
+            "Meals, Licensed holder tour guide during sightseeing",
+            "Entrance & monument fees, Manakamana cable car fee",
+            "Bar bills, Laundry bills, Tips and all other expenses except mentioned in package includes heading",
+            "Baggage and personal expenses",
+            "Any other expenses due to political, Act of nature or any other reason which are beyond control of Travelers Himalaya or its associate agents"
+        ],
+        "notes": [
+            "Rate is valid for Indian Passport/Voters ID card and Valid till March 2025.",
+            "Airport transfer Supplement charges will be applicable before 8:00 A.M & after 8:00 P.M.",
+            "Accommodation in Kathmandu will be Star Category as mentioned. Similar category accommodations will be used in other destinations.",
+            "Vehicle will not be at disposal but will perform activities as per the Package Inclusions on point to point basis.",
+            "The above program is just the guideline and can be customized as per your requirements."
+        ]
+    },
+    {
+        "tour_code": "TH - 005",
+        "tour_title": "Wildlife & Wonders Tour Package ",
+        "slug": "wildlife-&-wonders-tour-package",
+        "tour_duration": 7,
+        "map_details": [
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.52351916410544,
+                "lng": 84.31324238983373
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.714273264180438,
+                "lng": 85.31737684584914
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 28.211170307284377,
+                "lng": 83.98166129722624
+            }
+        ],
+        "destinations_covered": [
+            "Kathmandu",
+            "Pokhara",
+            "Chitwan"
+        ],
+        "product_description": "Wildlife & wonders tour package as a name suggests covering major triangle destinations, Kathmandu, Pokhara and Chitwan. Trip Begins from Kathmandu- the city of temples covers core religious and historically important UNESCO World Heritage sites; where travelers can understand culture and lifestyle of Nepalese people. Then moving forward to Pokhara - known as Switzerland of Asia which gives magnificent view of western Himalayan ranges including Mt Fishtail, Annapurna, Dhaulagiri and other mountain peaks, lakes, waterfall, etc. And Chitwan famous for safari in tropical jungles of the Terai that preserves some of the best wildlife habitat in the subcontinent. It offers exceptional biodiversity and a beautiful natural environment. The tropical jungles of the Terai preserve some of the best wildlife habitat in the subcontinent. Beside the popular nature and cultural site tour, during this tour one can be involved in various adventure activity, night life, casinos, discotheques, shopping, etc.",
+        "outlined_itinerary": [
+            "Day 01: Arrive at Tribhuvan International Airport.",
+            "Day 02: Explore Kathmandu's cultural wonders on a sightseeing tour.",
+            "Day 03: Drive to Pokhara, enjoying scenic views along the way.",
+            "Day 04: Discover the natural beauty of Pokhara on a sightseeing tour.",
+            "Day 05: Drive to Chitwan, exploring the wilderness of Flora and Fauna.",
+            "Day 06: Experience the jungle activities.",
+            "Day 07: Return to Kathmandu by road, savoring the journey back.",
+            "Day 08: Departure from Tribhuvan International Airport for your international flight."
+        ],
+        "detailed_itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive in Kathmandu",
+                "description": "Upon your arrival at Tribhuvan International Airport in Kathmandu, keep an eye out for our representative holding a placard with your name. They will assist you to the hotel, where our tour officer will help with the check-in process and provide a briefing about the tour itinerary. In the evening, you can visit Thamel, the main tourist hub, and enjoy some time at a bar or club own your own. Have a comfortable overnight stay in Kathmandu."
+            },
+            {
+                "day": 2,
+                "title": "Kathmandu City Tour",
+                "description": "After Breakfast we begin our cultural discovery in Kathmandu, the heart of Nepal. We'll visit the Pashupatinath Temple, a sacred place where Lord Pashupatinath is worshipped for eternal peace and salvation. Next, we'll see the impressive Boudhanath Stupa, a large stupa with a vibrant Tibetan culture around it. Moving on, we'll explore Patan Durbar Square, a hub of fine art, with charming alleys and beautiful temples. Finally, we'll visit Swayambhunath Stupa, also known as the \"Monkey Temple,\" famous for its resident monkey population. After a fulfilling day, we'll return to the hotel in Kathmandu for an overnight stay. "
+            },
+            {
+                "day": 3,
+                "title": "Drive to Pokhara",
+                "description": "After breakfast, get ready for an exciting adventure as we travel through on a scenic drive to Pokhara, covering a distance of 210 kilometers, which will take approximately 6 to 7 hours. Along the way, you'll be treated to mesmerizing views of rivers, terraced fields, and as you approach Pokhara, the captivating sight of the Annapurna range will amaze you. Pokhara is renowned for its scenic beauty, often referred to as the \"lake city\" Once we reach Pokhara, you can enjoy a leisurely stroll through the city in the evening, soaking in the charming atmosphere. Alternatively, you can relax by the serene lakeside, taking in the picturesque views. Overnight, you'll be staying in Pokhara, ready to explore its wonders the next day"
+            },
+            {
+                "day": 4,
+                "title": "Sarangkot with Pokhara sightseeing tour",
+                "description": "In the morning, we'll take a short drive to Sarangkot, a hilltop viewpoint known for its mesmerizing sunrise views. From here, you'll be treated to the awe-inspiring sight of the Annapurna, Dhaulagiri, and Manaslu mountain ranges bathed in golden sunlight. After returning to the hotel and enjoying a delicious breakfast, our sightseeing adventure in Pokhara continues. First, we'll visit the Bindhabasini Temple, an important religious site dedicated to the goddess Durga, offering a peaceful and spiritual ambiance. Next, we'll head to Davis Falls, also known as \"PataleChanggo,\" where you can witness the spectacular underground waterfall created by water currents flowing beneath the land. The sight of the water disappearing into the depths is truly fascinating. Our exploration continues with a visit to Mahadev Cave, also called Gupteshwor Cave, a limestone cave housing a shrine dedicated to Lord Shiva. The cave's ancient history and religious significance make it a unique and intriguing destination. Before the day comes to a close, we'll stop at the Seti Gorge, where the Seti River flows through the city. At certain points, the river disappears underground, creating a mystical and picturesque setting. In the evening, you'll have the delightful experience of a 01-hour boat ride on Fewa Lake, taking you to Taal Barahi Temple. After a satisfying day of exploration, you'll have a comfortable overnight stay in Pokhara."
+            },
+            {
+                "day": 5,
+                "title": "Drive to Chitwan",
+                "description": "Drive towards Chitwan (180 km, 4-5 hrs drive). Chitwan is listed among one of the eight UNESCO world heritage sites. This is also the first national park of Nepal. You will enjoy 2 days full of jungle activities that will take you deep into the jungle and get closer to the wild as you comb the jungles for rhinos and tigers. On the evening there will be special cultural show by indigenous Tharu community people followed by dinner. Overnight stay at Chitwan."
+            },
+            {
+                "day": 6,
+                "title": "Jungle Activity in Chitwan National Park ",
+                "description": "The day will be filled with various jungle activities starting with jungle safari. Canoeing on the calm waters of Rapti River is the best way to spot water birds, crocodiles and alligators. Visit local Tharu village to closely observe the lifestyle and habitat of these indigenous people; and the brave can even take a guided walk through the jungle, surrounded by the hoots and roars of the forest. Overnight stay at Chitwan."
+            },
+            {
+                "day": 7,
+                "title": "Drive back to Kathmandu",
+                "description": "After breakfast, we'll begin our journey back to Kathmandu. The scenic drive will take you through beautiful landscapes and provide a chance to relish the memories of your time in Pokhara and Chitwan. Once we reach Kathmandu, we'll transfer you to your respective hotel. The rest of the day is free for you to relax and enjoy some leisure time."
+            },
+            {
+                "day": 8,
+                "title": "Depart Kathmandu",
+                "description": "Our representative will drop you off at the airport three hours before your flight departure. We hope you enjoyed your time in the Himalayas and invite you to return for another adventure, exploring the spectacular mountains and more of Nepal's wonders. Safe travels!"
+            }
+        ],
+        "tour_costs": {
+            "currency": "INR",
+            "pricing": [
+                {
+                    "category": "5_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 71900
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 67500
+                        }
+                    ]
+                },
+                {
+                    "category": "5_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 48600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 44500
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 40400
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 36400
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 38000
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 33800
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 31700
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 27700
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 29900
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 25600
+                        }
+                    ]
+                }
+            ]
+        },
+        "tour_cost_includes": [
+            "Special traditional welcome on arrival at International airport",
+            "Airport-Hotel-Airport transfers on private vehicle",
+            "Night Double/Twin sharing accommodation at Kathmandu",
+            "Night Double/Twin sharing accommodation at Pokhara",
+            "Night Double/Twin sharing accommodation at Chitwan",
+            "Daily breakfast at hotel you are staying at",
+            "Lunch & Dinner at hotel in Chitwan",
+            "Land transfer from Kathmandu/Pokhara/Chitwan/Kathmandu in private /ac vehicle",
+            "Sightseeing and transfer as per the itinerary by private a/c vehicle",
+            " Full day Kathmandu city tour",
+            "Full day Pokhara city tour",
+            " Full day Jungle activity in Chitwan",
+            "Mineral Water on board during sightseeing tour",
+            "Local Sim card with 4G facilities returnable",
+            "All applicable taxes"
+        ],
+        "hotels": [
+            {
+                "category": "5* Premium",
+                "kathmandu": "Kathmandu Marriot Hotel",
+                "pokhara": "Sarangkot Mountain Lodge",
+                "chitwan": "Barahi Jungle Lodge"
+            },
+            {
+                "category": "5* Deluxe",
+                "kathmandu": "Hyatt Regency Kathmandu/ Dusit Princess Kathmandu",
+                "pokhara": "Fishtail Lodge by Annapurna",
+                "chitwan": "Soaltee Westend Resort"
+            },
+            {
+                "category": "4* Premium",
+                "kathmandu": "Aloft Kathmandu Thamel",
+                "pokhara": "Mountain Glory Forest Resort & Spa",
+                "chitwan": "Green Park Resort"
+            },
+            {
+                "category": "4* Deluxe",
+                "kathmandu": "Hotel Everest/ Hotel Barahi Kathmandu",
+                "pokhara": "Hotel Barahi Pokhara",
+                "chitwan": "Park Safari Resort"
+            },
+            {
+                "category": "3* Premium",
+                "kathmandu": "Hotel Grand",
+                "pokhara": "Hotel Aabas Pokhara",
+                "chitwan": "Royal Tiger Luxury Resort"
+            },
+            {
+                "category": "3* Deluxe",
+                "kathmandu": "Hotel Sifal/Hotel Yu Khang",
+                "pokhara": "Hotel Queenspark",
+                "chitwan": "Royal Tiger Luxury Resort"
+            }
+        ],
+        "tour_cost_excludes": [
+            "Meals, Licensed holder tour guide during sightseeing",
+            "Entrance & monument fees, Manakamana cable car fee",
+            "Bar bills, Laundry bills, Tips and all other expenses except mentioned in package includes heading",
+            "Baggage and personal expenses",
+            "Any other expenses due to political, Act of nature or any other reason which are beyond control of Travelers Himalaya or its associate agents"
+        ],
+        "notes": [
+            "Rate is valid for Indian Passport/Voters ID card and Valid till March 2025.",
+            "Airport transfer Supplement charges will be applicable before 8:00 A.M & after 8:00 P.M.",
+            "Accommodation in Kathmandu will be Star Category as mentioned. Similar category accommodations will be used in other destinations.",
+            "Vehicle will not be at disposal but will perform activities as per the Package Inclusions on point to point basis.",
+            "The above program is just the guideline and can be customized as per your requirements."
+        ]
+    },
+    {
+        "tour_code": "TH - 006",
+        "tour_title": "Nepal’s Grand Tour Package",
+        "slug": "nepal’s-grand-tour-package",
+        "tour_duration": 8,
+        "map_details": [
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.71692487467829,
+                "lng": 85.50361926007999
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat": 27.714273264180438,
+                "lng":  85.31737684584914
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat":  27.52351916410544,
+                "lng": 84.31324238983373
+            },
+            {
+                "image_url": "https://lh5.googleusercontent.com/p/AF1QipN3zwcaCYbaneIneobu0rSLTDr3nPMTTWZmdwUD=w408-h544-k-no",
+                "lat":  28.211170307284377,
+                "lng": 83.98166129722624
+            }
+        ],
+        "destinations_covered": [
+            "Kathmandu",
+            "Pokhara",
+            "Chitwan",
+            "Nagarkot"
+        ],
+        "product_description": "Nepal’s Grand Tour Package is classic tour covering major triangle destinations, Kathmandu, Pokhara, Chitwan & Nagarkot. Trip begin from Kathmandu- the city of temples covers core religious and historically important UNESCO World Heritage sites; where travelers can understand culture and lifestyle of Nepalese people. Then moving forward to Pokhara - known as Switzerland of Asia which gives magnificent view of western Himalayan ranges including Mt Fishtail, Annapurna, Dhaulagiri and other mountain peaks, lakes, waterfall, etc. Chitwan famous for safari in tropical jungles of the Terai that preserves some of the best wildlife habitat in the subcontinent. It offers exceptional biodiversity and a beautiful natural environment. The tropical jungles of the Terai preserve some of the best wildlife habitat in the subcontinent. And Nagarkot one of the hill station nearby Kathmandu valley where you can witness the panoramic mountain view of eastern mountain Including Mt. Everest and green high hills surrounding the valley. Beside the popular nature and cultural site tour, during this tour one can be involved in various adventure activity, night life, casinos, discotheques, shopping, etc.",
+        "outlined_itinerary": [
+            "Day 01: Arrive at Tribhuvan International Airport.",
+            "Day 02: Explore Kathmandu's cultural wonders on a sightseeing tour.",
+            "Day 03: Drive to Pokhara, enjoying scenic views along the way.",
+            "Day 04: Discover the natural beauty of Pokhara on a sightseeing tour.",
+            "Day 05: Drive to Chitwan, exploring the wilderness of Flora and Fauna.",
+            "Day 06: Experience the Jungle Activities.",
+            "Day 07: Return to Kathmandu by road, and move towards Hill Station.",
+            "Day 08: Departure from Tribhuvan International Airport for your international flight."
+        ],
+        "detailed_itinerary": [
+            {
+                "day": 1,
+                "title": "Arrive in Kathmandu",
+                "description": "Upon your arrival at Tribhuvan International Airport in Kathmandu, keep an eye out for our representative holding a placard with your name. They will assist you to the hotel, where our tour officer will help with the check-in process and provide a briefing about the tour itinerary. In the evening, you can visit Thamel, the main tourist hub, and enjoy some time at a bar or club own your own. Have a comfortable overnight stay in Kathmandu."
+            },
+            {
+                "day": 2,
+                "title": "Kathmandu City Tour",
+                "description": "After Breakfast we begin our cultural discovery in Kathmandu, the heart of Nepal. We'll visit the Pashupatinath Temple, a sacred place where Lord Pashupatinath is worshipped for eternal peace and salvation. Next, we'll see the impressive Boudhanath Stupa, a large stupa with a vibrant Tibetan culture around it. Moving on, we'll explore Patan Durbar Square, a hub of fine art, with charming alleys and beautiful temples. Finally, we'll visit Swayambhunath Stupa, also known as the \"Monkey Temple,\" famous for its resident monkey population. After a fulfilling day, we'll return to the hotel in Kathmandu for an overnight stay. "
+            },
+            {
+                "day": 3,
+                "title": "Drive to Pokhara",
+                "description": "After breakfast, get ready for an exciting adventure as we travel through on a scenic drive to Pokhara, covering a distance of 210 kilometers, which will take approximately 6 to 7 hours. Along the way, you'll be treated to mesmerizing views of rivers, terraced fields, and as you approach Pokhara, the captivating sight of the Annapurna range will amaze you. Pokhara is renowned for its scenic beauty, often referred to as the \"lake city\" Once we reach Pokhara, you can enjoy a leisurely stroll through the city in the evening, soaking in the charming atmosphere. Alternatively, you can relax by the serene lakeside, taking in the picturesque views. Overnight, you'll be staying in Pokhara, ready to explore its wonders the next day"
+            },
+            {
+                "day": 4,
+                "title": "Sarangkot with Pokhara sightseeing tour",
+                "description": "In the morning, we'll take a short drive to Sarangkot, a hilltop viewpoint known for its mesmerizing sunrise views. From here, you'll be treated to the awe-inspiring sight of the Annapurna, Dhaulagiri, and Manaslu mountain ranges bathed in golden sunlight. After returning to the hotel and enjoying a delicious breakfast, our sightseeing adventure in Pokhara continues. First, we'll visit the Bindhabasini Temple, an important religious site dedicated to the goddess Durga, offering a peaceful and spiritual ambiance. Next, we'll head to Davis Falls, also known as \"PataleChanggo,\" where you can witness the spectacular underground waterfall created by water currents flowing beneath the land. The sight of the water disappearing into the depths is truly fascinating. Our exploration continues with a visit to Mahadev Cave, also called Gupteshwor Cave, a limestone cave housing a shrine dedicated to Lord Shiva. The cave's ancient history and religious significance make it a unique and intriguing destination. Before the day comes to a close, we'll stop at the Seti Gorge, where the Seti River flows through the city. At certain points, the river disappears underground, creating a mystical and picturesque setting. In the evening, you'll have the delightful experience of a 01-hour boat ride on Fewa Lake, taking you to Taal Barahi Temple. After a satisfying day of exploration, you'll have a comfortable overnight stay in Pokhara."
+            },
+            {
+                "day": 5,
+                "title": "Drive to Chitwan",
+                "description": "Drive towards Chitwan (180 km, 4-5 hrs drive). Chitwan is listed among one of the eight UNESCO world heritage sites. This is also the first national park of Nepal. You will enjoy 2 days full of jungle activities that will take you deep into the jungle and get closer to the wild as you comb the jungles for rhinos and tigers. On the evening there will be special cultural show by indigenous Tharu community people followed by dinner. Overnight stay at Chitwan."
+            },
+            {
+                "day": 6,
+                "title": "Jungle Activity in Chitwan National Park ",
+                "description": "The day will be filled with various jungle activities starting with jungle safari. Canoeing on the calm waters of Rapti River is the best way to spot water birds, crocodiles and alligators. Visit local Tharu village to closely observe the lifestyle and habitat of these indigenous people; and the brave can even take a guided walk through the jungle, surrounded by the hoots and roars of the forest. Overnight stay at Chitwan."
+            },
+            {
+                "day": 7,
+                "title": "Drive back to Kathmandu and transfer to Nagarkot",
+                "description": "After breakfast drive back to Kathmandu. Upon arriving, transfer to Nagarkot. Nagarkot is 32 KM from Kathmandu and 1:30 min of driving. Nagarkot is one of the nearest hill stations from Kathmandu. Upon arrival followed by welcome drinks check in at hotel and Evening enjoys the panoramic view of eastern mountain ranges with green high hills from your respective hotel & Overnight in Nagarkot"
+            },
+            {
+                "day": 8,
+                "title": "Depart Kathmandu",
+                "description": "Our cheerful representative will drop you off to the airport three hours prior to the flight departure. The mystic land of the Himalayas holds many more secrets to be told. Come back again for another adventure visiting our spectacular mountains."
+            }
+        ],
+        "tour_costs": {
+            "currency": "INR",
+            "pricing": [
+                {
+                    "category": "5_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 84900
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 79900
+                        }
+                    ]
+                },
+                {
+                    "category": "5_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 49100
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 44600
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 41600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 37200
+                        }
+                    ]
+                },
+                {
+                    "category": "4_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 38300
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 33800
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_premium",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 32900
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 28400
+                        }
+                    ]
+                },
+                {
+                    "category": "3_star_deluxe",
+                    "pricing_details": [
+                        {
+                            "group_size": "2_to_4_pax",
+                            "price": 31600
+                        },
+                        {
+                            "group_size": "5_to_10_pax",
+                            "price": 27200
+                        }
+                    ]
+                }
+            ]
+        },
+        "tour_cost_includes": [
+            "Special traditional welcome on arrival at International airport",
+            "Airport-Hotel-Airport transfers on private vehicle",
+            "Night Double/Twin sharing accommodation at Kathmandu",
+            "Night Double/Twin sharing accommodation at Pokhara",
+            "Night Double/Twin sharing accommodation at Chitwan",
+            "Night Double/Twin sharing accommodation at Nagarkot",
+            "Daily breakfast at hotel you are staying at",
+            "Lunch & Dinner at hotel in Chitwan",
+            "Land transfer from Kathmandu/Pokhara/Chitwan/Nagarkot/Kathmandu in private /ac vehicle",
+            "Sightseeing and transfer as per the itinerary by private a/c vehicle",
+            "Full day Kathmandu city tour",
+            "Full day Pokhara city tour",
+            "Full day Jungle activity in Chitwan",
+            "Mineral Water on board during sightseeing tour",
+            "Local Sim card with 4G facilities returnable",
+            "All applicable taxes."
+        ],
+        "hotels": [
+            {
+                "category": "5* Premium",
+                "kathmandu": "Kathmandu Marriot Hotel",
+                "pokhara": "Sarangkot Mountain Lodge",
+                "chitwan": "Barahi Jungle Lodge",
+                "nagarkot": "Kavya Resort Nagarkot"
+            },
+            {
+                "category": "5* Deluxe",
+                "kathmandu": "Hyatt Regency Kathmandu/ Dusit Princess Kathmandu",
+                "pokhara": "Fishtail Lodge by Annapurna",
+                "chitwan": "Soaltee Westend Resort",
+                "nagarkot": "Hotel Mystic Mountain"
+            },
+            {
+                "category": "4* Premium",
+                "kathmandu": "Aloft Kathmandu Thamel",
+                "pokhara": "Mountain Glory Forest Resort & Spa",
+                "chitwan": "Green Park Resort",
+                "nagarkot": "Tayo Eco Resort"
+            },
+            {
+                "category": "4* Deluxe",
+                "kathmandu": "Hotel Everest/ Hotel Barahi Kathmandu",
+                "pokhara": "Hotel Barahi Pokhara",
+                "chitwan": "Park Safari Resort",
+                "nagarkot": "Hotel Country Villa"
+            },
+            {
+                "category": "3* Premium",
+                "kathmandu": "Fairfield by Marriot",
+                "pokhara": "Hotel Aabas Pokhara",
+                "chitwan": "Royal Tiger Luxury Resort",
+                "nagarkot": "The Fort Resort"
+            },
+            {
+                "category": "3* Deluxe",
+                "kathmandu": "Hotel Grand/Hotel Manang",
+                "pokhara": "Hotel Queenspark",
+                "chitwan": "Royal Tiger Luxury Resort",
+                "nagarkot": "Hotel Himalayan Villa"
+            }
+        ],
+        "tour_cost_excludes": [
+            "Meals, Licensed holder tour guide during sightseeing",
+            "Entrance & monument fees, Manakamana cable car fee",
+            "Bar bills, Laundry bills, Tips and all other expenses except mentioned in package includes heading",
+            "Baggage and personal expenses",
+            "Any other expenses due to political, Act of nature or any other reason which are beyond control of Travelers Himalaya or its associate agents"
+        ],
+        "notes": [
+            "Rate is valid for Indian Passport/Voters ID card and Valid till March 2025.",
+            "Airport transfer Supplement charges will be applicable before 8:00 A.M & after 8:00 P.M.",
+            "Accommodation in Kathmandu will be Star Category as mentioned. Similar category accommodations will be used in other destinations.",
+            "Vehicle will not be at disposal but will perform activities as per the Package Inclusions on point to point basis.",
+            "The above program is just the guideline and can be customized as per your requirements."
+        ]
+    }
+]

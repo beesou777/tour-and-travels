@@ -5,7 +5,7 @@
     <home-activities />
     <home-ready-adventure />
     <home-destination />
-    <home-around-the-world />
+    <!-- <home-around-the-world /> -->
   </div>
 </template>
 

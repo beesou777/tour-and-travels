@@ -27,6 +27,6 @@
 @import "../../assets/scss/_function.scss";
 
 .background-img {
-  background-image: setBackground("../../assets/img/destination/img6_01.webp");
+  background-image: setBackground("../../public/img/destination/img6_01.webp");
 }
 </style>

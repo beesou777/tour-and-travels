@@ -105,7 +105,7 @@ const { getImage } = useNuxtImage();
 
 .background-img {
   background-image: setBackground(
-    "../../assets/img/destination/around-the-world.webp"
+    "../../public/img/destination/around-the-world.webp"
   );
   @media (max-width: 768px) {
     background-size: cover;
