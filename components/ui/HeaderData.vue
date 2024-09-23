@@ -112,7 +112,7 @@
       </div>
     </div>
     <div class="flex flex-none snap-center basis-full aspect-[1920/550]">
-      <img :src="tourData.img" :alt="tourData.title" class="w-full object-cover rounded">
+      <nuxt-img :src="tourData.img" :alt="tourData.title" class="w-full object-cover rounded" />
     </div>
   </div>
 </template>

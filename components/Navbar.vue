@@ -4,7 +4,7 @@
       class="shadow-[0px_3px_6px_rgb(0,_0,_0,_6%)] bg-gray-50 flex flex-wrap items-center justify-between px-2 md:p-10 py-4 lg:py-4"
     >
       <div class="">
-        <img :src="logo" alt="" />
+        <nuxt-img :src="getIcon('logo')" alt="" />
       </div>
       <div class="flex items-center gap-10">
         <div class="items uppercase">
@@ -134,9 +134,9 @@
 <script setup lang="ts">
 import { onMounted, ref, watch, computed } from "vue";
 import { useRouter } from "vue-router";
-import logo from "../assets/icons/logo.svg";
 const router = useRouter();
 const isToggle = ref(false);
+const { getIcon } = useNuxtImage();
 
 interface NavItem {
   name: string;

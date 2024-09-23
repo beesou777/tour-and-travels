@@ -5,8 +5,8 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between">
       <div>
         <div class="wrapper relative rounded-md">
-          <img
-            :src="travel"
+          <nuxt-img
+            :src="getImage('destination/aroundWorld')"
             alt="travel"
             class=" object-contain aspect-[350/320] w-full h-full rounded-[16px] max-w-[350px]"
           />
@@ -97,8 +97,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import travel from "../../assets/img/destination/aroundWorld.webp";
-import icons from "../../assets/icons/travels_guide.svg";
+const { getImage } = useNuxtImage();
+
 </script>
 <style scoped lang="scss">
 @import "../../assets/scss/_function.scss";

@@ -5,7 +5,7 @@
     >
       <div class="">
         <div class="logo">
-          <img :src="logo" alt="" />
+          <nuxt-img :src="getIcon('logo')" alt="" />
         </div>
         <p class="py-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,
@@ -101,5 +101,6 @@
   </div>
 </template>
 <script setup lang="ts">
-import logo from "../assets/icons/logo.svg";
+const { getIcon } = useNuxtImage();
+
 </script>

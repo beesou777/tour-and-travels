@@ -4,7 +4,7 @@
       <div class="">
         <div class="max-w-[600px] w-full h-full aspect-[350/350]">
           <NuxtImg
-            src="/img/fly.webp"
+            :src="getImage('fly')"
             alt="hero image"
             class="w-full max-w-[600px] h-auto object-cover"
             width="600"
@@ -30,7 +30,7 @@
         <div class="grid grid-cols-2 py-4 md:py-2">
           <div class="col-span-1">
             <div class="py-2">
-              <NuxtImg class="h-[42px] w-[42px]" :src="travelsGuide" alt="" />
+              <NuxtImg class="h-[42px] w-[42px]" :src="getIcon('travels_guide')" alt="" />
             </div>
             <h3>Expert Travel Guid</h3>
             <p class="body-2 text-muted leading-[1.5]">
@@ -40,7 +40,7 @@
           </div>
           <div class="col-span-1">
             <div class="py-2">
-              <img class="h-[42px] w-[42px]" :src="trustedGuide" alt="" />
+              <nuxt-img class="h-[42px] w-[42px]" :src="getIcon('travels_guide')" alt="" />
             </div>
             <h3>Personalized Nepal Trip</h3>
             <p class="body-2 text-muted leading-[1.5]">
@@ -51,9 +51,11 @@
         </div>
         <div class="text-primary flex gap-2 item-center py-2">
           <span>
-            <img
-              :src="location"
+            <nuxt-img
+              :src="getIcon('location')"
               alt="icons"
+              format="webp"
+              quality="80"
               height="20"
               width="20"
               class="h-[24px] w-[24px]"
@@ -71,9 +73,10 @@
   </div>
 </template>
 <script setup lang="ts">
-import location from "../../assets/icons/location.svg";
-// import trustedGuide from "../../assets/icons/travels_guide.svg";
-import travelsGuide from '~/assets/icons/travels_guide.svg';
+
+const { getIcon, getImage } = useNuxtImage();
+
+
 useHead({
   link: [
     {

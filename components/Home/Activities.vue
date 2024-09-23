@@ -8,7 +8,7 @@
         :key="index"
       >
         <div class="img">
-          <img
+          <nuxt-img
             :src="activity.image"
             alt="activity name"
             height="60"
@@ -22,7 +22,9 @@
   </div>
 </template>
 <script setup lang="ts">
-import activityImage from "../../assets/icons/travels_guide.svg";
+
+const { getIcon} = useNuxtImage();
+
 interface Activity {
   name: string;
   image: string;
@@ -31,23 +33,23 @@ interface Activity {
 const activityData: readonly Activity[] = [
   {
     name: "Activity 1",
-    image: activityImage,
+    image: getIcon('travels_guide'),
   },
   {
     name: "Activity 2",
-    image: activityImage,
+    image: getIcon('travels_guide'),
   },
   {
     name: "Activity 3",
-    image: activityImage,
+    image: getIcon('travels_guide'),
   },
   {
     name: "Activity 4",
-    image: activityImage,
+    image: getIcon('travels_guide'),
   },
   {
     name: "Activity 5",
-    image: activityImage,
+    image: getIcon('travels_guide'),
   },
 ];
 </script>

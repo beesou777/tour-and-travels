@@ -11,7 +11,7 @@
         :key="index"
       >
         <NuxtLink :to="'/tour/' + item.slug2" class="group-hover:scale-110 duration-300">
-          <img
+          <nuxt-img
             :src="item.image"
             alt="Tourist destination in Nepal"
             class="aspect-[350/250] w-full h-auto object-cover transform transition-transform duration-500"
@@ -61,12 +61,8 @@
 </template>
 
 <script setup lang="ts">
-import kathmandu from "../../assets/img/destination/kathmandu.webp";
-import bharatnager from "../../assets/img/destination/bh.webp";
-import dharan from "../../assets/img/destination/dh3.webp";
-import pokhara2 from "../../assets/img/destination/pokhara3.webp";
-import lumbini from "../../assets/img/destination/lumbini.webp";
-import featureImg from "../../assets/img/destination/tour-feature-1.webp";
+
+const { getImage } = useNuxtImage();
 
 interface Destination {
   image: string;
@@ -77,37 +73,37 @@ interface Destination {
 
 const destination: readonly Destination[] = [
   {
-    image: kathmandu,
+    image: getImage("destination/kathmandu"),
     tour_count: 3,
     destination_name: "Kathmandu",
     slug2: "kathmandu-hiking-tour",
   },
   {
-    image: bharatnager,
+    image: getImage("destination/bh"),
     tour_count: 3,
     destination_name: "Biratnagar",
     slug2: "biratnagar-cultural-experience",
   },
   {
-    image: dharan,
+    image: getImage("destination/dh3"),
     tour_count: 3,
     destination_name: "Dharan",
     slug2: "dharan-city-exploration",
   },
   {
-    image: pokhara2,
+    image: getImage("destination/pokhara3"),
     tour_count: 3,
     destination_name: "Pokhara",
     slug2: "pokhara-sarangkot-sunrise",
   },
   {
-    image: featureImg,
+    image: getImage("destination/lumbini"),
     tour_count: 3,
     destination_name: "Lumbini",
     slug2: "lumbini-buddha-birthplace-tour",
   },
   {
-    image: lumbini,
+    image: getImage("destination/kathmandu"),
     tour_count: 3,
     destination_name: "Lumbini",
     slug2: "lumbini-peace-stupa-tour",

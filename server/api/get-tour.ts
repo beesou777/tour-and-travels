@@ -1,236 +1,163 @@
 export default defineEventHandler(() => {
-    const featureData = [
+  const featureData = [
+    {
+      "tour_code": "TH - 004",
+      "tour_title": "Mystical Nepal Tour",
+      "tour_duration": 7,
+      "destinations_covered": [
+        "Kathmandu",
+        "Pokhara",
+        "Jomsom"
+      ],
+      "product_description": "Himalayan Trio as the name suggests it covers two most popular valley tour of the country, Kathmandu and Pokhara. This tour is a fine blend of religion, culture and nature. Kathmandu- the city of temples covers core religious and historically important UNESCO World Heritage sites; where travelers can understand culture and lifestyle of Nepalese people. This tour also covers Pokhara - known as Switzerland of Asia which gives magnificent view of western Himalayan ranges including Mt Fishtail, Annapurna, Dhaulagiri and other mountain peaks, lakes, waterfall, etc. Also Muktinath is a Vishnu temple, sacred to both Hindus and Buddhists. It is located in Muktinath Valley at the foot of the Thorong La mountain pass in Mustang, Nepal. It is one of the world's highest temples. Within Hinduism, it is one of the 108 Divya Desams, and is the only Divya Desam located outside India. Beside the popular Pilgrimage, nature and cultural site tour, during this tour one can be involved in various adventure activity, night life, casinos, discotheques, shopping, etc.",
+      "outlined_itinerary": [
+        "Day 01: Arrival in Tribhuvan International airport",
+        "Day 02: Kathmandu sightseeing tour",
+        "Day 03: Drive to Pokhara",
+        "Day 04: Fly Jomsom & sightseeing",
+        "Day 05: Fly Pokhara & sightseeing tour",
+        "Day 06: Drive back Kathmandu",
+        "Day 07: International departure"
+      ],
+      "detailed_itinerary": [
         {
-            img: "/images/kathmandu.webp",
-            title: "Kathmandu",
-            price: 5500,
-            person: 120,
-            location: "Nepal",
-            days: 5,
-            slug: "Kathmandu",
-            slug2: "kathmandu",
-            lat: 27.7172,
-            lng: 85.3240,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "day": 1,
+          "title": "Arrive in Kathmandu",
+          "description": "Once you arrive at the Tribhuvan International Airport in Kathmandu, look out for our representative who will be holding a placard with your name on it. A short drive and you will be in your hotel, our tour officer will help you complete all the check-in procedure and brief you about tour itinerary. In the evening you can head over to Thamel, the main tourist hub where you can have some good time at the bar or a club on own. Overnight stay in Kathmandu."
         },
         {
-            img: "/images/kathmadu2.webp",
-            title: "Kathmandu Durbar Square",
-            price: 4500,
-            person: 80,
-            location: "Nepal",
-            days: 3,
-            slug: "Kathmandu",
-            slug2: "kathmandu-durbar-square",
-            lat: 27.7104,
-            lng: 85.2904,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "day": 2,
+          "title": "Kathmandu City Tour",
+          "description": "Today you get to kick-start your cultural discovery! Visit Pashupatinath Temple, Boudhanath Stupa, Patan Durbar Square, Swoyambhunath Stupa, and more. The day is filled with cultural landmarks of Kathmandu. Overnight in Kathmandu."
         },
         {
-            img: "/images/pokhara2.webp",
-            title: "Pokhara Lakeside",
-            price: 6500,
-            person: 150,
-            location: "Nepal",
-            days: 7,
-            slug: "Pokhara",
-            slug2: "pokhara-lakeside",
-            lat: 28.2096,
-            lng: 83.9856,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-                "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-                "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-                "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-                "Lorem, ipsum dolor.",
-                "Lorem, ipsum dolor.",
-                "Lorem, ipsum dolor."
-            ]
+          "day": 3,
+          "title": "Drive to Pokhara",
+          "description": "Following breakfast, our adventure begins with a scenic drive to Pokhara (210km, 7-8 hrs drive) offering views of rivers, terrace fields, and captivating views of the Annapurna range. Optional visit to Manakamana Devi Temple by cable car. Overnight in Pokhara."
         },
         {
-            img: "/images/pokhara3.webp",
-            title: "Sarangkot Sunrise Tour",
-            price: 4000,
-            person: 60,
-            location: "Nepal",
-            days: 2,
-            slug: "Pokhara",
-            slug2: "pokhara-sarangkot-sunrise",
-            lat: 28.2386,
-            lng: 83.9918,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "day": 4,
+          "title": "Fly to Jomsom & Drive Muktinath",
+          "description": "Early morning transfer to airport for flight to Jomsom. Drive to Muktinath for the temple visit. Return to Jomsom. Overnight in Jomsom."
         },
         {
-            img: "/images/lumbini.webp",
-            title: "Lumbini Pilgrimage",
-            price: 7000,
-            person: 50,
-            location: "Nepal",
-            days: 8,
-            slug: "Lumbini",
-            slug2: "lumbini-pilgrimage",
-            lat: 27.6666,
-            lng: 83.2500,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "day": 5,
+          "title": "Fly back to Pokhara & Sightseeing Tour",
+          "description": "Fly back to Pokhara, visit Bindabasini Temple, Davis Falls, Mahadev Cave, and Seti Gorge. Stroll the lakeside area in the evening. Overnight in Pokhara."
         },
         {
-            img: "/images/lumbini3.webp",
-            title: "Birthplace of Buddha Tour",
-            price: 7500,
-            person: 40,
-            location: "Nepal",
-            days: 9,
-            slug: "Lumbini",
-            slug2: "lumbini-birthplace-of-resurrection",
-            lat: 27.6666,
-            lng: 83.2500,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "day": 6,
+          "title": "Drive back to Kathmandu",
+          "description": "After breakfast, drive back to Kathmandu. Rest of the day free at leisure. Overnight in Kathmandu."
         },
         {
-            img: "/images/dhr2.webp",
-            title: "Dharan City Exploration",
-            price: 6000,
-            person: 90,
-            location: "Nepal",
-            days: 6,
-            slug: "Dharan",
-            slug2: "dharan-city-exploration",
-            lat: 26.8227,
-            lng: 87.2729,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicinge.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicingere.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.ere"
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "day": 7,
+          "title": "Depart Kathmandu",
+          "description": "Our representative will drop you off at the airport three hours prior to flight departure."
+        }
+      ],
+      "tour_costs": {
+        "currency": "INR",
+        "pricing": {
+          "5_star_premium": {
+            "2_to_4_pax": 71200,
+            "5_to_10_pax": 65300
+          },
+          "5_star_deluxe": {
+            "2_to_4_pax": 53800,
+            "5_to_10_pax": 48600
+          },
+          "4_star_premium": {
+            "2_to_4_pax": 47300,
+            "5_to_10_pax": 42200
+          },
+          "4_star_deluxe": {
+            "2_to_4_pax": 45600,
+            "5_to_10_pax": 40400
+          },
+          "3_star_premium": {
+            "2_to_4_pax": 42400,
+            "5_to_10_pax": 37300
+          },
+          "3_star_deluxe": {
+            "2_to_4_pax": 40600,
+            "5_to_10_pax": 34500
+          }
+        }
+      },
+      "tour_cost_includes": [
+        "Special traditional welcome on arrival at International airport",
+        "Airport-Hotel-Airport transfers on private vehicle",
+        "03 Night Double/Twin sharing accommodation at Kathmandu",
+        "02 Night Double/Twin sharing accommodation at Pokhara",
+        "01 Night Double/Twin sharing accommodation at Jomsom",
+        "Daily breakfast at hotel",
+        "Lunch & Dinner at hotel in Jomsom",
+        "Sightseeing and transfer as per the itinerary by private A/C vehicle",
+        "Jomsom/Muktinath/Jomsom by SIC vehicle",
+        "Pokhara/Jomsom/Pokhara by Flight",
+        "01 Full day Kathmandu city tour",
+        "01 Full day Pokhara city tour",
+        "01 Full day Muktinath Darshan",
+        "ACAP Permit",
+        "Mineral Water on board during sightseeing tour",
+        "Local Sim card with 4G facilities returnable",
+        "All applicable taxes"
+      ],
+      "hotels": [
+        {
+          "category": "5* Premium",
+          "kathmandu": "Kathmandu Marriot Hotel",
+          "pokhara": "Sarangkot Mountain Lodge",
+          "jomsom": "Hotel Lo Mustang"
         },
         {
-            img: "/images/dh3.webp",
-            title: "Dharan Hiking Tour",
-            price: 5000,
-            person: 70,
-            location: "Nepal",
-            days: 4,
-            slug: "Dharan",
-            slug2: "dharan-hiking-tour",
-            lat: 26.8227,
-            lng: 87.2729,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "category": "5* Deluxe",
+          "kathmandu": "Hyatt Regency Kathmandu/ Dusit Princess Kathmandu",
+          "pokhara": "Fishtail Lodge by Annapurna",
+          "jomsom": "Hotel Lo Mustang"
         },
         {
-            img: "/images/bh.webp",
-            title: "Biratnagar City Tour",
-            price: 4000,
-            person: 85,
-            location: "Nepal",
-            days: 3,
-            slug: "Biratnagar",
-            slug2: "biratnagar-city-tour",
-            lat: 26.4483,
-            lng: 87.2694,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "category": "4* Premium",
+          "kathmandu": "Aloft Kathmandu Thamel",
+          "pokhara": "Mountain Glory Forest Resort & Spa",
+          "jomsom": "Hotel Oms Home"
         },
         {
-            img: "/images/biratnagar.webp",
-            title: "Biratnagar Cultural Experience",
-            price: 4500,
-            person: 95,
-            location: "Nepal",
-            days: 5,
-            slug: "Biratnagar",
-            slug2: "biratnagar-cultural-experience",
-            lat: 26.4483,
-            lng: 87.2694,
-            overview: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam magnam distinctio...",
-            highlights: [
-              "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing.",
-              "Lorem ipsum dolor sit, amet consectetur adipisicing."
-            ],
-            included: [
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor.",
-              "Lorem, ipsum dolor."
-            ]
+          "category": "4* Deluxe",
+          "kathmandu": "Hotel Everest/ Hotel Barahi Kathmandu",
+          "pokhara": "Hotel Barahi Pokhara",
+          "jomsom": "Hotel Shaligram"
         },
-    ];
+        {
+          "category": "3* Premium",
+          "kathmandu": "Hotel Grand",
+          "pokhara": "Hotel Aabas Pokhara",
+          "jomsom": "Hotel Shaligram"
+        },
+        {
+          "category": "3* Deluxe",
+          "kathmandu": "Hotel Simal/Hotel Yu Khang",
+          "pokhara": "Hotel Queenspark",
+          "jomsom": "Hotel Shaligram"
+        }
+      ],
+      "tour_cost_excludes": [
+        "Meals, Licensed holder tour guide during sightseeing",
+        "Entrance & monument fees, Manakamana cable car fee",
+        "Bar bills, Laundry bills, Tips and all other expenses except mentioned in package includes heading",
+        "Baggage and personal expenses",
+        "Any other expenses due to political, Act of nature or any other reason which are beyond control of Travelers Himalaya or its associate agents"
+      ],
+      "notes": [
+        "Rate is valid for Indian Passport/Voters ID card and Valid till March 2025.",
+        "Airport transfer Supplement charges will be applicable before 8:00 A.M & after 8:00 P.M.",
+        "Accommodation in Kathmandu will be Star Category as mentioned. Similar category accommodations will be used in other destinations.",
+        "Vehicle will not be at disposal but will perform activities as per the Package Inclusions on point to point basis.",
+        "The above program is just the guideline and can be customized as per your requirements."
+      ]
+    },
+  ];
 
-    return featureData;
+  return featureData;
 });

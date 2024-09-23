@@ -52,7 +52,7 @@ const imageIcon = computed(() =>
       <span class="flex justify-center items-center w-8 h-8 absolute top-[-10px] right-[-10px] h3 bg-gray-200 rounded-full cursor-pointer">
         x
       </span>
-      <img src="${props.selectedTour?.img}" style="width: 100%; height: 100px;"/>
+      <nuxt-img src="${props.selectedTour?.img}" style="width: 100%; height: 100px;"/>
       <p class="font-bold py-2">${props.selectedTour?.title}</p>
       <p class="body-bold text-primary">$${props.selectedTour?.price}</p>
     </div>
