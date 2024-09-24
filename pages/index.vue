@@ -1,10 +1,10 @@
 <template>
   <div>
     <home-homepage />
-    <home-tour-packages />
+    <home-destination :render-data="renderData"/>
     <!-- <home-hero-section /> -->
     <home-activities />
-    <home-destination :render-data="renderData"/>
+    <home-tour-packages />
     <home-ready-adventure />
     <home-about-us/>
     <!-- <home-feature-tour :render-data="renderData" /> -->

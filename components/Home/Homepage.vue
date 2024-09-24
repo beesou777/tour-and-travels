@@ -1,13 +1,13 @@
 <template>
   <section
-    class="background-image user-select-none overflow-hidden  py-0 lg:pt-5 lg:pb-3 relative"
+    class="background-image relative h-[65vh] md:h-[80vh] max-h-[80vh] bg-cover bg-center bg-no-repeat"
   >
+    <div
+      class="w-full h-full overflow-hidden  bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
+    ></div>
 
     <div
-      class="w-full h-full overflow-hidden min-h-[580px] bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
-    ></div>
-    <div
-      class="max-w-[700px] min-w-[310px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3] text-center md:py-8 text-white"
+      class="w-full lg:w-[58%] md:w-[80%] sm:w-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3] text-center text-white"
     >
       <p class="body-bold text-secondary md:mx-0 mx-auto">
         Discover the Beauty of Nepal
@@ -39,22 +39,16 @@ useHead({
   link: [
     {
       rel: "preload",
-      as: "image",
       href: getImage("big-homepage-img"),
+      type: "image/webp",
+      fetchpriority: "high",
+      loading: "eager",
     },
   ],
 });
 </script>
 <style scoped lang="scss">
-.background-image{
-    background-image: url("/public/img/big-homepage-img.webp");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80vh;
-    max-height: 100vh;
-    @media (max-width: 768px) {
-        height: 65vh;
-    }
+.background-image {
+  background-image: url("/public/img/big-homepage-img.webp");
 }
 </style>

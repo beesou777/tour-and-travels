@@ -4,13 +4,13 @@
         <p class="text-primary body-bold">Popular Tour Packages</p>
         <h2 class="h1 mx-auto">Our Popular Tour Packages</h2>
     </div>
-    <div class="flex gap-[10px] flex-nowrap">
+    <div class="flex gap-[10px] md:flex-nowrap flex-wrap px-[10px]">
       <div
-        class="duration-500 h-[500px] flex flex-1 w-auto rounded-[12px] overflow-hidden relative"
+        class="duration-500 h-[350px] md:h-[500px] flex flex-[0_0_100%] md:flex-1 w-auto rounded-[12px] overflow-hidden relative"
         v-for="(item, index) in destination"
         :key="index"
         @mouseenter="active = index"
-        :class="{ 'flex-grow-[2.1]': index === active }"
+        :class="{ 'md:flex-grow-[2.1]': index === active }"
       >
         <nuxt-img
           class="w-full h-full object-cover"

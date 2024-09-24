@@ -2,7 +2,7 @@
   <div class="max-w-[1450px] mx-auto py-10 px-[10px] md:px-0">
     <p class="h5 text-center text-primary">why choose us</p>
     <h2 class="extra-h1 mx-auto leading-[1.2] pt-4 pb-10 md:text-left">Our Unique Offerings</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
       <div
         class="hover:bg-primary hover:text-white p-[30px] flex justify-center flex-col gap-6 rounded h-[250px] duration-300 group shadow-[0px_4px_17px_0px_rgba(0,_0,_0,_0.06)] md:max-h-full max-h-[160px]"
         v-for="(activity, index) in activityData"

@@ -6,7 +6,7 @@
       <div class="flex md:flex-row flex-col justify-between items-center">
         <div>
           <h3 class="h1 py-2 md:text-left text-center">Ready To Adventure And Enjoy Natural</h3>
-          <p class="text-gray-200 md:text-left text-center">
+          <p class="text-gray-200 md:text-left text-center py-4 md:py-0">
             Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>

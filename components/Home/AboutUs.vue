@@ -5,13 +5,13 @@
         <div class="">
           <div class="border-8 rounded-lg border-gray-200 w-fit">
             <NuxtImg
-              class="max-w-[400px] h-[500px] object-cover"
+              class="max-w-[400px] max-h-[500px] h-full md:h-[500px] w-full object-cover"
               :src="getImage('destination/kathmandu')"
               alt=""
             />
           </div>
           <div
-            class="border-8 rounded-lg border-gray-200 w-fit translate-y-[-250px] translate-x-[60%] mb-[-250px]"
+            class="hidden md:block border-8 rounded-lg border-gray-200 w-fit translate-y-[-250px] translate-x-[60%] mb-[-250px]"
           >
             <NuxtImg
               class="max-w-[350px] h-[350px] object-cover"
@@ -20,7 +20,7 @@
             />
           </div>
         </div>
-        <div class="flex flex-col gap-4 justify-center">
+        <div class="flex flex-col gap-4 justify-center py-4 md:py-0">
           <p class="h4 uppercase text-primary">about us</p>
           <h2 class="h1">Mapping Adventures, Making Moments</h2>
           <p>

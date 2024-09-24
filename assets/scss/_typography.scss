@@ -129,3 +129,15 @@ h6,
   }
 }
 
+
+p{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
