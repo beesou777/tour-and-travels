@@ -10,15 +10,6 @@
               alt=""
             />
           </div>
-          <div
-            class="hidden md:block border-8 rounded-lg border-gray-200 w-fit translate-y-[-250px] translate-x-[60%] mb-[-250px]"
-          >
-            <NuxtImg
-              class="max-w-[350px] h-[350px] object-cover"
-              :src="getImage('destination/pokhara2')"
-              alt=""
-            />
-          </div>
         </div>
         <div class="flex flex-col gap-4 justify-center py-4 md:py-0">
           <p class="h4 uppercase text-primary">about us</p>

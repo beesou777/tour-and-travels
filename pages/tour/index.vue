@@ -1,3 +1,3 @@
 <template>
-     <tour-data/>
+  <tour-data />
 </template>

@@ -1,14 +1,12 @@
 <template>
   <div>
     <home-homepage />
-    <home-destination :render-data="renderData"/>
-    <!-- <home-hero-section /> -->
+    <home-destination :data="renderData"/>
     <home-activities />
     <home-tour-packages />
     <home-ready-adventure />
     <home-about-us/>
     <!-- <home-feature-tour :render-data="renderData" /> -->
-    <!-- <home-around-the-world /> -->
   </div>
 </template>
 

@@ -29,7 +29,7 @@
       </template>
 
       <template #tab4>
-        <tour-tab-location />
+        <tour-tab-location :data="tourData" />
       </template>
     </tour-tabs>
   </div>
