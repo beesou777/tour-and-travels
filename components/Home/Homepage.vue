@@ -1,29 +1,20 @@
 <template>
   <section
-    class="w-full lg:min-h-[700px] lg:max-h-[768px] lg:h-[95vh] user-select-none overflow-hidden bg-slate-500 min-h-[580px] max-h-[756px] h-[65vh] py-0 lg:pt-5 lg:pb-3 relative"
+    class="background-image user-select-none overflow-hidden  py-0 lg:pt-5 lg:pb-3 relative"
   >
-    <NuxtImg
-      class="absolute top-0 left-0 w-[100vw] lg:min-h-[700px] lg:max-h-[768px] lg:h-[95vh] min-h-[580px] max-h-[756px] h-[65vh] overflow-hidden"
-      :src="getImage('big-homepage-img')"
-      format="webp"
-      alt="top tour travelin nepal"
-      width="1400"
-      height="768"
-      loading="eager"
-      priority
-    />
+
     <div
-      class="w-full lg:min-h-[700px] lg:max-h-[768px] lg:h-[95vh] overflow-hidden min-h-[580px] max-h-[756px] h-[65vh] bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
+      class="w-full h-full overflow-hidden min-h-[580px] bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
     ></div>
     <div
-      class="max-w-[700px] min-w-[310px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3] text-center md:py-48 text-white"
+      class="max-w-[700px] min-w-[310px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3] text-center md:py-8 text-white"
     >
-      <p class="body-bold text-primary md:mx-0 mx-auto">
+      <p class="body-bold text-secondary md:mx-0 mx-auto">
         Discover the Beauty of Nepal
       </p>
       <h2 class="extra-h1 py-2 text-center">
-        Unforgettable <span class=" font-family">Adventure</span> &
-        Travel Experiences
+        Unforgettable <span class="font-family">Adventure</span> & Travel
+        Experiences
       </h2>
       <p class="py-2">
         Explore Nepal’s majestic mountains, vibrant culture, and hidden gems.
@@ -45,12 +36,24 @@
 const { getIcon, getImage } = useNuxtImage();
 
 useHead({
-    link: [
-        {
-            rel: "prefetch",
-            as: "image",
-            href: "/public/img/big-homepage-img.webp",
-        },
-    ]
-})
+  link: [
+    {
+      rel: "preload",
+      as: "image",
+      href: getImage("big-homepage-img"),
+    },
+  ],
+});
 </script>
+<style scoped lang="scss">
+.background-image{
+    background-image: url("/public/img/big-homepage-img.webp");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    @media (max-width: 768px) {
+        height: 65vh;
+    }
+}
+</style>
