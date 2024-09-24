@@ -12,7 +12,7 @@
         </div>
         <div class="py-4">
           <button
-            class="py-4 px-8 bg-white text-primary uppercase font-semibold hover:text-white hover:bg-gray-950 duration-300 rounded"
+            class="py-4 px-8 bg-white text-green-700 uppercase font-semibold hover:text-white hover:bg-gray-950 duration-300 rounded"
           >
             let's get started
           </button>

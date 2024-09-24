@@ -59,6 +59,7 @@
               height="20"
               width="20"
               class="h-[24px] w-[24px]"
+              loading="lazy"
             />
           </span>
           <span class="font-medium"

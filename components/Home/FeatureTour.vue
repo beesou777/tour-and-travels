@@ -10,10 +10,8 @@
         <span class="font_family text-muted">Explore the Nepal with Us</span>
       </h1>
 
-      <!-- Card Data Component (Shows Tours) -->
       <ui-card-data :data="renderData" />
 
-      <!-- CTA Button with Optimized Link Text for SEO -->
       <div class="text-center py-2">
         <NuxtLink
           to="/tour"
@@ -27,28 +25,16 @@
 </template>
 
 <script setup lang="ts">
-import { useTourStore } from "../../store/toueStore";
-
-const tourStore = useTourStore();
-
-// Active filter button
-const activeButton = ref<string>("All");
-
-// Fetching data on mounted
-onMounted(async () => {
-  await tourStore.getTours();
-});
-
-// Computed data based on active button
-const renderData = computed(() => {
-  return tourStore.tourDestination
-});
+const {renderData} = defineProps({
+  renderData: {
+    type: Object
+  }
+})
 </script>
 
 <style scoped lang="scss">
 @import "../../assets/scss/_function.scss";
 
-// Background image styling
 .background_image {
   &::after {
     background-image: setBackground(
@@ -57,7 +43,6 @@ const renderData = computed(() => {
   }
 }
 
-// Custom font family
 .font_family {
   font-family: fontFamily(cursive);
 }

@@ -2,7 +2,8 @@
   <div class="max-w-[1450px] mx-auto px-[10px] md:py-10 py-6">
     <p class="h5 text-center text-primary">Explore Nepal's Wonders</p>
     <h2 class="extra-h1 leading-[1.1] mx-auto py-6 max-w-[720px] text-center">
-      Check Out Nepal's Top <span class="font_family text-muted">Tourist</span> Destinations
+      Check Out Nepal's Top
+      <span class="font_family text-muted">Tourist</span> Destinations
     </h2>
     <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
       <div
@@ -10,17 +11,21 @@
         v-for="(item, index) in destination"
         :key="index"
       >
-        <NuxtLink :to="'/tour/' + item.slug2" class="group-hover:scale-110 duration-300">
+        <NuxtLink
+          :to="'/tour/' + item.slug2"
+          class="group-hover:scale-110 duration-300"
+        >
           <nuxt-img
             :src="item.image"
             alt="Tourist destination in Nepal"
             class="aspect-[350/250] w-full h-auto object-cover transform transition-transform duration-500"
+            loading="lazy"
           />
         </NuxtLink>
         <p
           class="absolute right-4 top-4 z-10 bg-accent py-[4px] px-4 rounded-md font-bold text-gray-900"
         >
-          {{ item.tour_count }} TOURS
+          {{ item.tour_count }} days / {{ item.tour_count - 1 }} nights
         </p>
 
         <div
@@ -29,12 +34,16 @@
           <h3
             class="relative h5 top-[-10px] text-white left-[-10px] w-[61%] bg-primary text-left font-semibold leading-[28.5px] uppercase p-[7px_15px] [border-top-left-radius:6px] duration-300 ease-in-out after:content-[''] after:absolute after:right-[-25px] after:bottom-0 after:m-[0_auto] after:w-0 after:h-0 after:[border-top:_43px_solid_#4da528] after:[border-left:_25px_solid_transparent] after:[border-right:_25px_solid_transparent]"
           >
-            <NuxtLink :to="'/tour/' + item.slug2" :area-label="item.destination_name">{{ item.destination_name }}</NuxtLink>
+            <NuxtLink
+              :to="'/tour/' + item.slug2"
+              :aria-label="item.destination_name"
+              >{{ item.destination_name }}</NuxtLink
+            >
           </h3>
           <div class="flex justify-between items-center p-[3px_9px_5px]">
             <p>View all tours in {{ item.destination_name }}</p>
             <NuxtLink
-            :area-label="item.slug2"
+              :aria-label="item.slug2"
               :to="'/tour/' + item.slug2"
               class="h-[42px] w-[42px] bg-gray-200 rounded-full flex justify-center items-center"
             >
@@ -61,7 +70,6 @@
 </template>
 
 <script setup lang="ts">
-
 const { getImage } = useNuxtImage();
 
 interface Destination {
@@ -109,6 +117,12 @@ const destination: readonly Destination[] = [
     slug2: "lumbini-peace-stupa-tour",
   },
 ];
+
+const { renderdata } = defineProps({
+  renderdata: {
+    type: Object,
+  },
+});
 </script>
 
 <style scoped lang="scss">

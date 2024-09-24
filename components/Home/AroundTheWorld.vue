@@ -9,6 +9,7 @@
             :src="getImage('destination/aroundWorld')"
             alt="travel"
             class=" object-contain aspect-[350/320] w-full h-full rounded-[16px] max-w-[350px]"
+            loading="lazy"
           />
         </div>
       </div>

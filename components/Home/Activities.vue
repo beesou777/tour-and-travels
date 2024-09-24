@@ -14,6 +14,7 @@
             height="60"
             width="60"
             class="w-[60px] group-hover:[filter:hue-rotate(145deg)_brightness(200%)] "
+            loading="lazy"
           />
         </div>
         <p class="h5 md:text-left">{{ activity.name }}</p>
@@ -53,6 +54,3 @@ const activityData: readonly Activity[] = [
   },
 ];
 </script>
-<style scoped lang="scss">
-
-</style>
