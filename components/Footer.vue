@@ -5,7 +5,7 @@
     >
       <div class="">
         <div class="logo">
-          <nuxt-img :src="getIcon('logo')" alt="" />
+          <nuxt-img :src="getIcon('logo')" alt="" loading="lazy" />
         </div>
         <p class="py-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,

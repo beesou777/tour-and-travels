@@ -4,10 +4,11 @@
       <div class="grid lg:grid-cols-2 grid-cols-1">
         <div class="">
           <div class="border-8 rounded-lg border-gray-200 w-fit">
-            <NuxtImg
+            <nuxt-img
               class="max-w-[400px] max-h-[500px] h-full md:h-[500px] w-full object-cover"
               :src="getImage('destination/kathmandu')"
               alt=""
+              loading="lazy"
             />
           </div>
         </div>

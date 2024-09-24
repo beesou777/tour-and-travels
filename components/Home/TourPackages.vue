@@ -16,6 +16,7 @@
           class="w-full h-full object-cover"
           :src="item.image"
           alt="destination image"
+          loading="lazy"
         />
         <div
           class="absolute bottom-[10px] left-[10px] flex justify-between items-center w-full px-2"

@@ -44,11 +44,21 @@ useHead({
       fetchpriority: "high",
       loading: "eager",
     },
+     {
+      rel: "preload",
+      href: getImage("small-homepage-img"),
+      type: "image/webp",
+      fetchpriority: "high",
+      loading: "eager",
+    },
   ],
 });
 </script>
 <style scoped lang="scss">
 .background-image {
   background-image: url("/public/img/big-homepage-img.webp");
+  @media (max-width: 768px) {
+    background-image: url("/public/img/small-homepage-img.webp");
+  }
 }
 </style>
