@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="flex gap-4">
+  <div class="">
+    <div class="flex gap-4 overflow-x-auto">
       <div
         class="flex items-baseline border-2 border-primary rounded-[27px] py-2 px-4 cursor-pointer group hover:text-white hover:bg-primary duration-300"
         @click="setActiveTab(0)"

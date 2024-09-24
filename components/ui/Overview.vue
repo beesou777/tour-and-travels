@@ -1,5 +1,5 @@
 <template>
-  <div class="col-span-7" v-if="tourData">
+  <div class="md:col-span-7 col-span-12" v-if="tourData">
     <div class="flex justify-between">
      <div class="flex flex-col gap-2">
        <h1 class="h1">{{ tourData.tour_title }}</h1>

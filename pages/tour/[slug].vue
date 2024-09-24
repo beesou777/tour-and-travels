@@ -3,7 +3,7 @@
     <ui-header-data :tour-data="tourData" />
     <div class="grid grid-cols-12 gap-4 max-w-[1445px] mx-auto px-[10px] py-5">
       <ui-overview :tour-data="tourData" />
-      <div class="pt-5 col-span-5">
+      <div class="pt-5 col-span-12 md:col-span-5">
         <h2 class="px-6">Contact Us</h2>
         <contact-form :subject="tourData?.title" />
       </div>
