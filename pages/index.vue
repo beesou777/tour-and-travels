@@ -3,9 +3,10 @@
     <home-homepage />
     <home-tour-packages />
     <!-- <home-hero-section /> -->
-    <home-destination :render-data="renderData"/>
     <home-activities />
+    <home-destination :render-data="renderData"/>
     <home-ready-adventure />
+    <home-about-us/>
     <!-- <home-feature-tour :render-data="renderData" /> -->
     <!-- <home-around-the-world /> -->
   </div>
