@@ -1,6 +1,7 @@
 <template>
   <div>
     <home-homepage />
+    <home-tour-packages />
     <!-- <home-hero-section /> -->
     <home-destination :render-data="renderData"/>
     <home-activities />
