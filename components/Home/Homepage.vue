@@ -9,6 +9,8 @@
       alt="top tour travelin nepal"
       width="1400"
       height="768"
+      loading="eager"
+      priority
     />
     <div
       class="w-full lg:min-h-[700px] lg:max-h-[768px] lg:h-[95vh] overflow-hidden min-h-[580px] max-h-[756px] h-[65vh] bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
@@ -41,4 +43,14 @@
 </template>
 <script setup lang="ts">
 const { getIcon, getImage } = useNuxtImage();
+
+useHead({
+    link: [
+        {
+            rel: "prefetch",
+            as: "image",
+            href: "/public/img/big-homepage-img.webp",
+        },
+    ]
+})
 </script>
