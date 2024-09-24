@@ -1,6 +1,6 @@
 <template>
   <section
-    class="background-image relative h-[65vh] md:h-[80vh] max-h-[80vh] bg-cover bg-center bg-no-repeat"
+    class="background-image relative bg-cover bg-center bg-no-repeat p-[20.385rem_0] md:p-[22.385rem_0]"
   >
     <div
       class="w-full h-full overflow-hidden  bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
