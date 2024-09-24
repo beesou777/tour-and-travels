@@ -43,7 +43,7 @@
           <div class="flex justify-between items-center p-[3px_9px_5px]">
             <p>View all tours in {{ item.destination_name }}</p>
             <NuxtLink
-              :ar-label="item.slug2"
+              :aria-label="item.slug2"
               :to="'/tour/' + item.slug2"
               class="h-[42px] w-[42px] bg-gray-200 rounded-full flex justify-center items-center"
             >

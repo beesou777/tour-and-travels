@@ -52,6 +52,7 @@ useHead({
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
+    max-height: 100vh;
     @media (max-width: 768px) {
         height: 65vh;
     }
