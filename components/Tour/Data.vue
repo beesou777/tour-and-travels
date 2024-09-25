@@ -1,7 +1,7 @@
 <template>
   <div class="pb-10">
     <div
-      class="[background-image:url(https://wordpress.themeholy.com/tourm/wp-content/uploads/2024/07/breadcumb-bg.jpg)] p-[9.375rem_0] text-white relative bg-[left_top] overflow-hidden text-center"
+      class="background-image bg-no-repeat bg-cover bg-center p-[9.375rem_0] text-white relative overflow-hidden text-center"
       v-if="tourData"
     >
       <div class="relative z-[3] max-w-[960px] w-full px-[.75rem] mx-auto">
@@ -48,6 +48,22 @@ useHead({
 });
 </script>
 <style scoped lang="scss">
+.background-image{
+  background-image: url("/public/img/single_tour.webp");
+  position: relative;
+  @media (max-width: 768px) {
+    background-image: url("/public/img/single_tour_sm.webp");
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}
 li:not(:last-child) {
   position: relative;
   &::after {
