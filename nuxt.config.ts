@@ -10,14 +10,17 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables/**', 'utils/**', 'store/**', 'layouts/**', 'pages/**'],
   },
+  routeRules: {
+    '/': { prerender: true },
+  },
   app: {
     head: {
       viewport: 'minimum-scale=1, initial-scale=1, width=device-width',
       htmlAttrs: { lang: 'en' },
-        link: [
-          { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', as: 'style' },
-          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' }
-        ],
+      link: [
+        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', as: 'style' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' }
+      ],
       meta: [
         { name: 'title', content: 'travels and tour' },
         { name: 'description', content: 'travels and tour' },
