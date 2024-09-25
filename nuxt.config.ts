@@ -14,6 +14,10 @@ export default defineNuxtConfig({
     head: {
       viewport: 'minimum-scale=1, initial-scale=1, width=device-width',
       htmlAttrs: { lang: 'en' },
+        link: [
+          { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', as: 'style' },
+          { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' }
+        ],
       meta: [
         { name: 'title', content: 'travels and tour' },
         { name: 'description', content: 'travels and tour' },
@@ -31,6 +35,12 @@ export default defineNuxtConfig({
   build: {
     extractCSS: true,
     minify: true,
+  },
+  googleFonts: {
+    families: {
+      Roboto: [400, 500, 700],
+    },
+    display: 'swap',
   },
   vite: {
     css: {
