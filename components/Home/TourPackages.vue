@@ -13,6 +13,7 @@
         :class="{ 'md:flex-grow-[2.1]': index === active }"
       >
         <nuxt-img
+        provider="imgix"
           class="w-full h-full object-cover"
           :src="item.image"
           alt="destination image"

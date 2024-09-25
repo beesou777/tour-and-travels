@@ -1,15 +1,13 @@
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 py-4">
     <div
-      class="relative group  cursor-pointer overflow-hidden shadow-[0px_4px_17px_0px_rgba(0,_0,_0,_0.06)] rounded-lg"
+      class="relative group cursor-pointer overflow-hidden shadow-[0px_4px_17px_0px_rgba(0,_0,_0,_0.06)] rounded-lg"
       v-for="(item, index) in data"
       :key="index"
     >
-      <NuxtLink
-        :to="'/tour/' + item.slug"
-        class="overflow-hidden"
-      >
+      <NuxtLink :to="'/tour/' + item.slug" class="overflow-hidden">
         <nuxt-img
+          provider="imgix"
           :src="getImage('destination/pokhara2')"
           alt="Tourist destination in Nepal"
           class="group-hover:scale-110 aspect-[350/250] min-h-[300px] w-full h-auto object-cover transform transition-transform duration-500"
