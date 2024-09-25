@@ -39,6 +39,21 @@ export default defineNuxtConfig({
     },
     compressPublicAssets: true,
   },
+  image: {
+    provider: 'imgix',
+    imgix: {
+      baseURL: 'https://travelershimilaya.imgix.net',
+    },
+    domains: ['travelershimilaya.imgix.net'], 
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1440,
+    },
+  },
   build: {
     extractCSS: true,
     minify: true,

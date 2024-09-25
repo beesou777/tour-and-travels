@@ -57,7 +57,6 @@ useHead({
   @media (max-width: 768px) {
     background-image: url("/public/img/small-homepage-img.webp");
   }
-
   @media (max-width: 520px) {
     background-image: url("/public/img/v-small-homepage-img.webp");
   }
