@@ -1,7 +1,13 @@
 <template>
   <section
-    class="background-image relative bg-cover bg-center bg-no-repeat py-[12.385rem] md:py-[13.385rem]"
+    class="background-image relative bg-cover bg-center bg-no-repeat py-[10.375rem] sm:py-[12.385rem] md:py-[13.385rem]"
   >
+    <nuxt-img
+      class="absolute top-0 left-0 w-full h-full object-cover sm:hidden block"
+      :src="getImage('v-small-homepage-img')"
+      alt="banner image"
+      loading="eager"
+    />
 
     <div
       class="relative z-[3] max-w-[960px] w-full px-[.75rem] mx-auto text-center text-white"
@@ -56,6 +62,10 @@ useHead({
   background-image: url("/public/img/big-homepage-img.webp");
   @media (max-width: 768px) {
     background-image: url("/public/img/small-homepage-img.webp");
+  }
+
+  @media (max-width: 520px) {
+    background-image:none ;
   }
     &:after{
     content: '';
