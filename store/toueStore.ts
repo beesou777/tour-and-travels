@@ -1,24 +1,25 @@
-import { defineStore } from 'pinia'
-import axios from 'axios';
-
+import { defineStore } from 'pinia';
 
 export const useTourStore = defineStore('tour-data', {
     state: () => ({
         tourDestination: [] as TourData[], 
+        isFetched: false 
     }),
     actions: {
-        async getTours() {
-            try {
-                const res = await axios.get<TourData[]>('/api/get-tour'); 
-                if (res.status === 200) {
-                    this.tourDestination = res.data;
-                }
-            } catch (error: unknown) { 
-                if (axios.isAxiosError(error)) {
-                    console.error('Error fetching tour data:', error.response?.data || error.message);
-                } else {
-                    console.error('Unexpected error:', error);
-                }
+        async fetchTours() {
+            if (this.isFetched) return; 
+
+            const { data, error } = await useFetch<TourData[]>('/api/get-tour', {
+                server: true 
+            });
+
+            if (data.value) {
+                this.tourDestination = data.value; 
+                this.isFetched = true; 
+            }
+
+            if (error.value) {
+                console.error('Error fetching tour data:', error.value);
             }
         }
     },

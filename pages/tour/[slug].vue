@@ -19,8 +19,8 @@ let tourName = ref<string>("");
 onMounted(async () => {
   if (!router.currentRoute.value.params.slug) router.push({ name: "tour" });
   tourName.value = router.currentRoute.value.params.slug;
-  if (tourStore.tourDestination.length === 0) await tourStore.getTours();
 });
+await tourStore.fetchTours();
 
 const tourData = computed(() => {
   const data = tourStore.tourDestination.filter((item: any) => {

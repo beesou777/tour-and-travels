@@ -32,8 +32,9 @@ const tourData = computed(() => {
   return tourStore.tourDestination;
 });
 
+await tourStore.fetchTours();
+
 onMounted(async () => {
-  await tourStore.getTours();
   if (tourData.value) {
     selectedTour.value = tourData.value[0];
   }

@@ -40,4 +40,24 @@ export default defineNuxtConfig({
     },
     compressPublicAssets: true,
   },
+  build: {
+    extractCSS: true,
+    minify: true,
+  },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+         additionalData: '@import "@/assets/scss/_function.scss";'
+        }
+      },
+      postcss: {
+        plugins: [
+          require('cssnano')({
+            preset: 'default',
+          }),
+        ],
+      }
+    }
+  }
 });
