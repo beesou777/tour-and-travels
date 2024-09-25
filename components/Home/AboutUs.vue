@@ -19,7 +19,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse alias
             quaerat vero doloremque cum dolorem totam, nemo neque tenetur quae.
           </p>
-          <ul class="py-4">
+          <ul class="py-4 counter">
             <li class="flex gap-2 items-center" v-for="i in 4" :key="i">
               featured point {{ i }}
             </li>
@@ -57,22 +57,3 @@
 <script setup lang="ts">
 const { getIcon, getImage } = useNuxtImage();
 </script>
-<style scoped lang="scss">
-ul {
-  counter-reset: step;
-  li::before {
-    min-width: 20px;
-    min-height: 20px;
-    height: 20px;
-    width: 20px;
-    background: theme("colors.secondary");
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    counter-increment: step;
-    content: counter(step);
-  }
-}
-</style>

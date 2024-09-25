@@ -3,9 +3,9 @@
     <nav
       class="shadow-[0px_3px_6px_rgb(0,_0,_0,_6%)] bg-gray-50 flex flex-wrap items-center justify-between px-2 md:p-10 py-4 lg:py-4"
     >
-      <div class="">
-        <nuxt-img :src="getIcon('logo')" alt="" loading="lazy" />
-      </div>
+      <div class="logo h-[42px] w-[214px]">
+          <nuxt-img height="42" width="214" :src="getIcon('logo')" alt="" loading="lazy" />
+        </div>
       <div class="flex items-center gap-10">
         <div class="items uppercase">
           <ul class="hidden md:flex">

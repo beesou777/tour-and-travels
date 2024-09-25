@@ -13,9 +13,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       viewport: 'minimum-scale=1, initial-scale=1, width=device-width',
-      htmlAttrs: {
-        lang: 'en',
-      },
+      htmlAttrs: { lang: 'en' },
       link: [
         {
           rel: 'preload',
@@ -37,6 +35,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: false,
+      routes: ['/'],
     },
     compressPublicAssets: true,
   },
@@ -46,11 +45,6 @@ export default defineNuxtConfig({
   },
   vite: {
     css: {
-      preprocessorOptions: {
-        scss: {
-         additionalData: '@import "@/assets/scss/_function.scss";'
-        }
-      },
       postcss: {
         plugins: [
           require('cssnano')({

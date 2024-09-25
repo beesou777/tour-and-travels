@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [],
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,17 +18,5 @@ export default {
     },
   },
   plugins: [],
-  purge: {
-    content: [
-      './components/**/*.{vue,js,ts}',
-      './layouts/**/*.vue',
-      './pages/**/*.vue',
-      './plugins/**/*.{js,ts}',
-      './nuxt.config.{js,ts}',
-    ],
-    options: {
-      safelist: [],
-    },
-  }
 }
 

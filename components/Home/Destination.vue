@@ -64,11 +64,3 @@ const {data} = defineProps({
   },
 });
 </script>
-
-<style scoped lang="scss">
-@import "../../assets/scss/_function.scss";
-
-.font_family {
-  font-family: fontFamily(cursive);
-}
-</style>

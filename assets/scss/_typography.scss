@@ -141,3 +141,25 @@ p{
     line-height: 1.25rem;
   }
 }
+
+.counter {
+  counter-reset: step;
+  li::before {
+    min-width: 20px;
+    min-height: 20px;
+    height: 20px;
+    width: 20px;
+    background: theme("colors.secondary");
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    counter-increment: step;
+    content: counter(step);
+  }
+}
+
+.font_family{
+  font-family: cursive;
+}

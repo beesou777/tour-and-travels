@@ -3,9 +3,9 @@
     <div
       class="max-w-[1440px] mx-auto px-[10px] grid md:grid-cols-3 grid-cols-1"
     >
-      <div class="">
-        <div class="logo">
-          <nuxt-img :src="getIcon('logo')" alt="" loading="lazy" />
+      <div >
+        <div class="logo h-[42px] w-[214px]">
+          <nuxt-img height="42" width="214" :src="getIcon('logo')" alt="" loading="lazy" />
         </div>
         <p class="py-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,

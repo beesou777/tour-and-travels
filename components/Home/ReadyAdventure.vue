@@ -1,6 +1,6 @@
 <template>
   <div
-    class="background-img bg-cover bg-center bg-no-repeat my-10 h-[450px] justify-center items-center flex text-white"
+    class="[background-image:url('/public/img/destination/img6_01.webp')] bg-cover bg-center bg-no-repeat my-10 h-[450px] justify-center items-center flex text-white"
   >
     <div class="max-w-[1445px] mx-auto px-[10px] w-full">
       <div class="flex md:flex-row flex-col justify-between items-center">
@@ -22,12 +22,3 @@
     </div>
   </div>
 </template>
-<script setup lang="ts">
-</script>
-<style scoped lang="scss">
-@import "../../assets/scss/_function.scss";
-
-.background-img {
-  background-image: setBackground("../../public/img/destination/img6_01.webp");
-}
-</style>

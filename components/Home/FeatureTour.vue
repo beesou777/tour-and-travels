@@ -42,8 +42,4 @@ const {renderData} = defineProps({
     );
   }
 }
-
-.font_family {
-  font-family: fontFamily(cursive);
-}
 </style>
