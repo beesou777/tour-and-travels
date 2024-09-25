@@ -1,13 +1,10 @@
 <template>
   <section
-    class="background-image relative bg-cover bg-center bg-no-repeat p-[20.385rem_0] md:p-[22.385rem_0]"
+    class="background-image relative bg-cover bg-center bg-no-repeat py-[12.385rem] md:py-[13.385rem]"
   >
-    <div
-      class="w-full h-full overflow-hidden  bg-gray-900 opacity-60 z-[2] absolute top-0 left-0"
-    ></div>
 
     <div
-      class="w-full lg:w-[58%] md:w-[80%] sm:w-[90%] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[3] text-center text-white"
+      class="relative z-[3] max-w-[960px] w-full px-[.75rem] mx-auto text-center text-white"
     >
       <p class="body-bold text-secondary md:mx-0 mx-auto">
         Discover the Beauty of Nepal
@@ -59,6 +56,15 @@ useHead({
   background-image: url("/public/img/big-homepage-img.webp");
   @media (max-width: 768px) {
     background-image: url("/public/img/small-homepage-img.webp");
+  }
+    &:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
 }
 </style>

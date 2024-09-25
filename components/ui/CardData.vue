@@ -26,7 +26,7 @@
         class="relative mt-[-49px] w-full%] bg-white rounded-[6px] py-[10px]"
       >
         <h3
-          class="relative body-bold top-[-10px] text-white bg-primary text-left font-semibold uppercase p-[7px_15px] [border-top-left-radius:6px] [border-top-right-radius:6px]"
+          class="relative !text-[.9rem] body-bold top-[-10px] text-white bg-primary text-left font-semibold uppercase p-[7px_15px] [border-top-left-radius:6px] [border-top-right-radius:6px]"
         >
           <NuxtLink
             :to="'/tour/' + item.slug"
