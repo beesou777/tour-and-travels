@@ -4,8 +4,15 @@
       class="shadow-[0px_3px_6px_rgb(0,_0,_0,_6%)] bg-gray-50 flex flex-wrap items-center justify-between px-2 md:p-10 py-4 lg:py-4"
     >
       <div class="logo h-[42px] w-[214px]">
-          <nuxt-img  height="42" width="214" :src="getIcon('logo')" alt="" loading="lazy" />
-        </div>
+        <nuxt-img
+          height="42"
+          quality="20"
+          width="214"
+          :src="getIcon('logo')"
+          alt=""
+          loading="lazy"
+        />
+      </div>
       <div class="flex items-center gap-10">
         <div class="items uppercase">
           <ul class="hidden md:flex">
@@ -78,54 +85,54 @@
               </li>
             </ul>
           </div>
-            <div class="flex md:hidden">
-              <svg
-                @click="isToggle = !isToggle"
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_1222_36505)">
-                  <path
-                    d="M13.5 1H0.5"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M13.5 4H3.5"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M13.5 7H6.5"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M13.5 13H0.5"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M13.5 10H3.5"
-                    stroke="black"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </g>
-                <defs>
-                  <clipPath id="clip0_1222_36505">
-                    <rect width="14" height="14" fill="white"></rect>
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
+          <div class="flex md:hidden">
+            <svg
+              @click="isToggle = !isToggle"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1222_36505)">
+                <path
+                  d="M13.5 1H0.5"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13.5 4H3.5"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13.5 7H6.5"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13.5 13H0.5"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13.5 10H3.5"
+                  stroke="black"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+              <defs>
+                <clipPath id="clip0_1222_36505">
+                  <rect width="14" height="14" fill="white"></rect>
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
         </div>
       </div>
     </nav>

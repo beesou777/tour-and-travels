@@ -52,5 +52,10 @@ export default defineNuxtConfig({
         ],
       }
     }
+  },
+  optimization: {
+    splitChunks: {
+      maxSize: 300000
+    }
   }
 });
