@@ -43,7 +43,7 @@ useHead({
     },
      {
       rel: "preload",
-      href: getImage("small-homepage-img"),
+      href: getImage("v-small-homepage-img"),
       type: "image/webp",
       fetchpriority: "high",
       loading: "eager",
