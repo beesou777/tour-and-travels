@@ -18,8 +18,15 @@ export default defineNuxtConfig({
       viewport: 'minimum-scale=1, initial-scale=1, width=device-width',
       htmlAttrs: { lang: 'en' },
       link: [
-        { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', as: 'style' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' }
+        {
+          rel: 'preload',
+          href: 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap',
+          as: 'style',
+          onload: "this.onload=null;this.rel='stylesheet'",
+        }
+      ],
+      noscript: [
+        { children: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap">' }
       ],
       meta: [
         { name: 'title', content: 'travels and tour' },
@@ -38,12 +45,6 @@ export default defineNuxtConfig({
   build: {
     extractCSS: true,
     minify: true,
-  },
-  googleFonts: {
-    families: {
-      Roboto: [400, 500, 700],
-    },
-    display: 'swap',
   },
   vite: {
     css: {
