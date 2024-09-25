@@ -454,8 +454,8 @@
     },
     {
         "tour_code": "TH - 003",
-        "tour_title": "Himalayan Wonder Tour Package ",
-        "slug": "himalayan_wonder_tour_package",
+        "tour_title": "Himalayan Wonder Tour Package",
+        "slug": "himalayan-wonder-tour-package",
         "tour_duration": 7,
         "map_details": [
             {
@@ -562,7 +562,7 @@
     {
         "tour_code": "TH - 001",
         "tour_title": "Mystical Nepal Tour",
-        "slug": " mystical_nepal_tour",
+        "slug": "mystical-nepal-tour",
         "tour_duration": 7,
         "map_details": [
             {
@@ -781,8 +781,8 @@
     },
     {
         "tour_code": "TH - 005",
-        "tour_title": "Wildlife & Wonders Tour Package ",
-        "slug": "wildlife-&-wonders-tour-package",
+        "tour_title": "Wildlife & Wonders Tour Package",
+        "slug": "wildlife-wonders-tour-package",
         "tour_duration": 7,
         "map_details": [
             {
@@ -1011,7 +1011,7 @@
     {
         "tour_code": "TH - 006",
         "tour_title": "Nepal’s Grand Tour Package",
-        "slug": "nepal’s-grand-tour-package",
+        "slug": "nepal-grand-tour-package",
         "tour_duration": 8,
         "map_details": [
             {

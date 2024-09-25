@@ -3,7 +3,6 @@
     <div class="flex justify-between">
      <div class="flex flex-col gap-2">
        <h1 class="h1">{{ tourData.tour_title }}</h1>
-       <span>{{tourData.tour_code}}</span>
      </div>
       <span
         class="flex flex-col items-center rounded-[8px] w-[70px] [box-shadow:_0px_4px_8px_rgba(0,_0,_0,_.04),_0px_0px_2px_rgba(0,_0,_0,_.06),_0px_0px_1px_rgba(0,_0,_0,_.04)]"

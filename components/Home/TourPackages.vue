@@ -21,13 +21,29 @@
         <div
           class="absolute bottom-[10px] left-[10px] flex justify-between items-center w-full px-2"
         >
-          <span class="bg-white px-4 py-2 rounded-md">{{ item.tags }}</span>
+          <span class="bg-white px-4 py-1 rounded-md line-clamp-1">{{ item.tags }}</span>
         </div>
         <NuxtLink
           v-if="active === index"
-          to="/tour/kathmandu-hiking-tour"
-          class="absolute bottom-[10px] right-[10px] text-white hover:underline h-[42px] w-[42px] bg-primary grid place-items-center rounded-full duration-500"
-          >{{ item.tour_count }}</NuxtLink
+          :to="'/tour/' + item.slug"
+          class="absolute bottom-[10px] right-[10px] text-white hover:underline h-[42px] w-[42px] bg-primary grid place-items-center rounded-full duration-500 hover:bg-secondary"
+          >
+           <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              class="rotate-[-45deg]"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_403_3715)">
+                <path
+                  d="M23.124 9.87897L18.538 5.29297L17.124 6.70697L21.386 10.97L0 11V13L21.446 12.97L17.123 17.293L18.537 18.707L23.124 14.121C23.6847 13.5575 23.9995 12.7949 23.9995 12C23.9995 11.205 23.6847 10.4425 23.124 9.87897Z"
+                  fill="#fff"
+                />
+              </g>
+            </svg>
+          </NuxtLink
         >
       </div>
     </div>
@@ -43,37 +59,37 @@ interface Destination {
   image: string;
   tour_count: number;
   destination_name: string;
-  slug2: string;
+  slug: string;
   tags: string;
 }
 const destination: readonly Destination[] = [
   {
     image: getImage("destination/kathmandu"),
-    tour_count: 3,
-    destination_name: "Kathmandu",
-    slug2: "kathmandu-hiking-tour",
-    tags: "popular, trending, popular",
+    tour_count: 8,
+    destination_name: "Nepal’s Grand Tour Package",
+    slug: "nepal-grand-tour-package",
+    tags: "Kathmandu,Pokhara,Chitwan,Nagarkot",
   },
   {
     image: getImage("destination/bh"),
-    tour_count: 3,
-    destination_name: "Biratnagar",
-    slug2: "biratnagar-cultural-experience",
-    tags: "popular , trending",
+    tour_count: 7,
+    destination_name: "Wildlife & Wonders Tour Package",
+    slug: "wildlife-wonders-tour-package",
+    tags: "Kathmandu,Pokhara,Chitwan",
   },
   {
     image: getImage("destination/dh3"),
     tour_count: 3,
-    destination_name: "Dharan",
-    slug2: "dharan-city-exploration",
-    tags: "popular , trending",
+    destination_name: "Mystical Nepal Tour",
+    slug: "mystical-nepal-tour",
+    tags: "Kathmandu,Pokhara,Jomsom",
   },
   {
     image: getImage("destination/pokhara3"),
     tour_count: 3,
-    destination_name: "Pokhara",
-    slug2: "pokhara-sarangkot-sunrise",
-    tags: "popular, trending, popular",
+    destination_name: "Himalayan Wonder Tour Package",
+    slug: "himalayan-wonder-tour-package",
+    tags: "Gorakpur,Lumbini,Pokhara,Kathmandu & Gorakhpur",
   },
 ];
 </script>
