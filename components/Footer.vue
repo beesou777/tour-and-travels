@@ -5,7 +5,7 @@
     >
       <div >
         <div class="logo h-[42px] w-[214px]">
-          <nuxt-img  provider="imgix" height="42" width="214" :src="getIcon('logo')" alt="" loading="lazy" />
+          <nuxt-img   height="42" width="214" :src="getIcon('logo')" alt="" loading="lazy" />
         </div>
         <p class="py-2">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione,

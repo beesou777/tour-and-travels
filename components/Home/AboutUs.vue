@@ -5,7 +5,7 @@
         <div class="">
           <div class="border-8 rounded-lg border-gray-200 w-fit">
             <nuxt-img
-            provider="imgix"
+            
               class="max-w-[400px] max-h-[500px] h-full md:h-[500px] w-full object-cover"
               :src="getImage('destination/kathmandu')"
               alt=""

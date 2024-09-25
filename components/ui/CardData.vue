@@ -7,7 +7,7 @@
     >
       <NuxtLink :to="'/tour/' + item.slug" class="overflow-hidden">
         <nuxt-img
-          provider="imgix"
+          
           :src="getImage('destination/pokhara2')"
           alt="Tourist destination in Nepal"
           class="group-hover:scale-110 aspect-[350/250] min-h-[300px] w-full h-auto object-cover transform transition-transform duration-500"
