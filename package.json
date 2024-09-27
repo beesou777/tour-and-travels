@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "build:prod": "next build && export APP_ENV=production"
+    "build:prod": "nuxt build && export NODE_ENV=production"
   },
   "dependencies": {
     "@nuxt/image": "^1.8.0",
