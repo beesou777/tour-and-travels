@@ -10,7 +10,7 @@
         Discover the Beauty of Nepal
       </p>
       <h2 class="extra-h1 py-2 text-center">
-        Unforgettable <span class="font-family">Adventure</span> & Travel
+        Unforgettable <span class="font-family">NepalAdventure</span> & Travel
         Experiences
       </h2>
       <p class="py-2">
