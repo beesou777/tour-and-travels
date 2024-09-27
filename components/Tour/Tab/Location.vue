@@ -30,17 +30,12 @@
 </template>
 
 <script setup lang="ts">
-const { data } = defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-});
+const data = inject("tourData") as any;
 
 const allLocations = computed(() =>
   Array.from(
     new Set(
-      data.hotels.flatMap(hotel => Object.keys(hotel).filter(key => key !== 'category'))
+      data.hotels.flatMap((hotel:any) => Object.keys(hotel).filter(key => key !== 'category'))
     )
   )
 );

@@ -29,14 +29,9 @@
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps({
-  tourData: {
-    type: Object,
-    default: () => {},
-  },
-});
 
-const { tourData } = toRefs(props);
+const tourData = inject("tourData") as any;
+
 </script>
 <style scoped lang="scss">
 .background-image{

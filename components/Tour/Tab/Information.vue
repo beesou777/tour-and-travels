@@ -50,11 +50,9 @@
   </div>
 </template>
 <script setup lang="ts">
-const { data } = defineProps({
-  data: {
-    type: Object,
-  },
-});
+
+const data = inject("tourData") as any;
+
 </script>
 <style scoped lang="scss">
 ul {

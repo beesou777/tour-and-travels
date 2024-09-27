@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="max-w-[1445px] mx-auto px-[10px] py-6 md:py-10">
-      <ui-card-data :data="tourData"  />
+      <ui-card-data />
     </div>
   </div>
 </template>
@@ -28,9 +28,9 @@ import { useTourStore } from "../../store/toueStore";
 const tourStore = useTourStore();
 const selectedTour = ref<any>(null);
 
-const tourData = computed(() => {
-  return tourStore.tourDestination;
-});
+const tourData = computed(() =>tourStore.tourDestination);
+
+provide("data", tourData);
 
 await tourStore.fetchTours();
 

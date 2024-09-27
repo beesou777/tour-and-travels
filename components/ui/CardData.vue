@@ -63,12 +63,7 @@
 <script setup lang="ts">
 const { getImage } = useNuxtImage();
 
-const { data } = defineProps({
-  data: {
-    type: Array,
-    required: true,
-  },
-});
+const data = inject("data") as any;
 
 const emit = defineEmits<{
   (event: "hover", tour: any): void;

@@ -61,11 +61,7 @@
 <script setup lang="ts">
 const activeIndex: Ref<number> = ref(-1);
 
-const { data } = defineProps({
-  data: {
-    type: Object,
-  },
-});
+const data = inject("tourData") as any;
 
 const toggle = (index: number) => {
   if (activeIndex.value === index) {

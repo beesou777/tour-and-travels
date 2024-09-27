@@ -58,9 +58,5 @@ const destination: readonly Destination[] = [
   },
 ];
 
-const {data} = defineProps({
-  data: {
-    type: Array,
-  },
-});
+const data = inject("data");
 </script>

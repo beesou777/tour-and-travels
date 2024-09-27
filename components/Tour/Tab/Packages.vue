@@ -37,12 +37,9 @@
 </template>
 
 <script setup lang="ts">
-const { data } = defineProps({
-  data: {
-    type: Object,
-    required: true,
-  },
-});
+
+const data = inject("tourData") as any;
+
 </script>
 
 <style scoped>

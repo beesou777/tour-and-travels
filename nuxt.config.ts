@@ -10,9 +10,6 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables/**', 'utils/**', 'store/**', 'layouts/**', 'pages/**'],
   },
-  routeRules: {
-    '/': { prerender: true },
-  },
   app: {
     head: {
       viewport: 'minimum-scale=1, initial-scale=1, width=device-width',
@@ -42,11 +39,11 @@ export default defineNuxtConfig({
     },
     compressPublicAssets: true,
   },
-  build: {
-    extractCSS: true,
-    minify: true,
-  },
   vite: {
+    build: {
+      extractCSS: true,
+      minify: true,
+    },
     css: {
       postcss: {
         plugins: [

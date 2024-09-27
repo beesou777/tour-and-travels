@@ -1,7 +1,7 @@
 <template>
   <div>
     <home-homepage />
-    <home-destination :data="renderData" />
+    <home-destination />
     <home-activities />
     <home-tour-packages />
     <home-ready-adventure />
@@ -16,9 +16,10 @@ const tourStore = useTourStore();
 
 await tourStore.fetchTours();
 
-const renderData = computed(() => {
-  return tourStore.tourDestination;
-});
+const renderData = computed(() => tourStore.tourDestination);
+
+provide("data", renderData);
+
 useHead({
   title: "Nepal Travel & Tour | best travel agency in Nepal",
 });

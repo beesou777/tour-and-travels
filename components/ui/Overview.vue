@@ -17,30 +17,26 @@
     </div>
     <tour-tabs>
       <template #tab1>
-        <tour-tab-information :data="tourData" />
+        <tour-tab-information />
       </template>
+      
       <template #tab2>
-        <tour-tab-itinerary :data="tourData" />
+        <tour-tab-itinerary  />
       </template>
 
       <template #tab3>
-        <tour-tab-packages :data="tourData" />
+        <tour-tab-packages />
       </template>
 
       <template #tab4>
-        <tour-tab-location :data="tourData" />
+        <tour-tab-location />
       </template>
     </tour-tabs>
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps({
-  tourData: {
-    type: Object,
-  },
-});
+const tourData  = inject("tourData") as any;
 
-const { tourData } = toRefs(props);
 </script>
 <style scoped lang="scss">
 </style>
